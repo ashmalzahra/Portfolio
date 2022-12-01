@@ -22,14 +22,14 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# Portfolio-setup-and-mobile-first
+# Portfolio
 
 > This is a simple replica of the https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A27&t=9GufdfER8lvr1MpO-0  template provided in the Microverse project. 
 
 Live Link
 In Progress
 
-![portfolio](https://user-images.githubusercontent.com/110582192/205082549-5c859179-5760-45d5-9a92-59514ba6df62.png)
+![P](https://user-images.githubusercontent.com/110582192/205129660-e0a1d638-2328-478b-9b5a-c4858f99ef27.png)
 
 
 ## Built With
@@ -74,9 +74,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 ## 📝 License
 
