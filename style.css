@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+body,
+html {
+  min-width: 100vw;
+  position: absolute;
+}
+
+header {
+  background: #3c3c3c;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+header div {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-left: 6%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.menu {
+  margin-right: 8%;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.menu img {
+  width: 22px;
+  height: 15px;
+}
+
+main {
+  display: block;
+  background-image: url(images/Group.png);
+  background-position: 100% 115%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: #1c1c1c;
+  padding: 0 24px;
+  padding-bottom: 130px;
+}
+
+h1 {
+  color: #ff6b00;
+  font-family: "Crete Round", serif;
+  font-size: 56px;
+  width: 327px;
+  height: 110px;
+  left: 24px;
+  margin-top: 0;
+  padding-top: 120px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: #fff;
+  display: block;
+  font-weight: 700;
+  margin: 0;
+}
+
+div p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 15px;
+  display: block;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  padding-left: 0;
+  margin-left: 22px;
+  margin-top: 0;
+}
+
+.socials li {
+  margin: 22px 22px 0 0;
+  display: list-item;
+  cursor: pointer;
+}
