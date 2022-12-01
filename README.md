@@ -24,7 +24,7 @@
 
 # Portfolio-setup-and-mobile-first
 
-> This is a simple replica of the https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A27&t=9GufdfER8lvr1MpO-0 provided in the Microverse project. 
+> This is a simple replica of the https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A27&t=9GufdfER8lvr1MpO-0  template provided in the Microverse project. 
 
 Live link
 Follow this link to visit my Portfolio.
