@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+<img src="https://github.com/microverseinc/readme-template/blob/master/murple_logo.png" alt="logo" width="140" height="auto" />
   <br/>
 
 </div>
@@ -26,9 +26,8 @@
 
 > This is a simple replica of the https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A27&t=9GufdfER8lvr1MpO-0  template provided in the Microverse project. 
 
-Live link
-Follow this link to visit my Portfolio.
-http://127.0.0.1:5500/index.html
+Live Link
+In Progress
 
 ![portfolio](https://user-images.githubusercontent.com/110582192/205082549-5c859179-5760-45d5-9a92-59514ba6df62.png)
 
