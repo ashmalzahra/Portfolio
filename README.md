@@ -73,6 +73,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://www.w3schools.com/css/css_grid.asp
 
 ## 📝 License
 
