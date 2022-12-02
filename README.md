@@ -29,8 +29,6 @@
 Live Link
 In Progress
 
-![P](https://user-images.githubusercontent.com/110582192/205129660-e0a1d638-2328-478b-9b5a-c4858f99ef27.png)
-
 
 ## Built With
 
