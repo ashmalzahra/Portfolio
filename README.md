@@ -29,8 +29,6 @@
 Live Link
 In Progress
 
-![P](https://user-images.githubusercontent.com/110582192/205129660-e0a1d638-2328-478b-9b5a-c4858f99ef27.png)
-
 
 ## Built With
 
@@ -75,6 +73,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://www.w3schools.com/css/css_grid.asp
 
 ## 📝 License
 
