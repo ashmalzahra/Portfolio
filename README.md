@@ -24,7 +24,7 @@
 
 # Portfolio
 
-> This is a simple replica of the https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A27&t=9GufdfER8lvr1MpO-0  template provided in the Microverse project. 
+> This is a simple replica of [template 2] (https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A27&t=9GufdfER8lvr1MpO-0) for portfolio setup. 
 
 Live Link
 In Progress
@@ -32,16 +32,16 @@ In Progress
 
 ## Built With
 
-- HTML, CSS3
+- HTML, CSS
 - VSCode
 
 ## Getting Started
 
-Clone this repository to get started with the project, make sure to install dependencies in the [Linters](https://github.com/Bateyjosue/linters-html-css/blob/main/.github/workflows/linters.yml) file
+Clone this repository to get started with the project, make sure to configure linters by following the instructions in the [Linters README file (https://github.com/microverseinc/linters-config/blob/master/README.md)
 
 
 ### Setup
--Clone the folder to your local machine
+-Clone the folder to your local machine.
 -Open the index.html file in your brower.
 
 
@@ -50,7 +50,8 @@ After pushing the changes on github, merge your pull request and let github acti
 
 ### Deployment
 Check for the tests when you generate a pull request and fix the errors if any.
-For stylelint error  run:<code>sudo npx stylelint "**/*.{css,scss}" --fix</code> for automatic fix.
+For stylelint errors run:<code>sudo npx stylelint "**/*.{css,scss}" --fix</code> for automatic fix.
+
 ## Authors
 
 👤 **Ashmal Zahra**
