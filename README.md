@@ -49,7 +49,7 @@ Clone this repository to get started with the project, make sure to configure li
 After pushing the changes on github, merge your pull request and let github action process changes.
 
 ### Deployment
-Check for the tests when you generate a pull request and fix the errors if any.
+Check for the tests when you generate a pull request and fix errors, if any.
 For stylelint errors run:<code>sudo npx stylelint "**/*.{css,scss}" --fix</code> for automatic fix.
 
 ## Authors
