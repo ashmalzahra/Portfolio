@@ -10,6 +10,8 @@ html {
   width: 375px;
 }
 
+/* main page */
+
 header {
   background: #3c3c3c;
   margin: 0;
@@ -282,6 +284,8 @@ div p {
   color: white;
 }
 
+/* About me section */
+
 .about-me {
   height: 700px;
   background: #1c1a19;
@@ -337,7 +341,6 @@ div p {
   height: 0;
   left: 0;
   right: 0;
-  top: calc(50% - 0px / 2 + 0.5px);
   margin-bottom: 125px;
   border: 1px solid #fff;
   margin-top: 22px;
