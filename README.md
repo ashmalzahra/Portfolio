@@ -37,7 +37,7 @@ In Progress
 
 ## Getting Started
 
-Clone the repository to get start with project, then make sure to install dependencies in the linters file located in the [linter](https://github.com/Bateyjosue/linters-html-css/blob/main/.github/workflows/linters.yml) file
+Clone this repository to get started with the project, make sure to install dependencies in the [Linters](https://github.com/Bateyjosue/linters-html-css/blob/main/.github/workflows/linters.yml) file
 
 
 ### Setup
@@ -46,12 +46,11 @@ Clone the repository to get start with project, then make sure to install depend
 
 
 ### Run tests
-After pushing the changes on github go in code tab click on Merge pull request and let github action proess and check for changes.
+After pushing the changes on github, merge your pull request and let github action process changes.
 
 ### Deployment
 Check for the tests when you generate a pull request and fix the errors if any.
-For stylelint error  run:<code>sudo npx stylelint "**/*.{css,scss}" --fix</code> and it will the fix style issues automatically.
-
+For stylelint error  run:<code>sudo npx stylelint "**/*.{css,scss}" --fix</code> for automatic fix.
 ## Authors
 
 👤 **Ashmal Zahra**
