@@ -191,6 +191,7 @@ div p {
   line-height: 20px;
   padding: 10px 12px;
   color: #fff;
+  float: left;
 }
 
 #languages li {
@@ -258,7 +259,6 @@ div p {
 }
 
 .languages {
-  display: flex;
   list-style: none;
   padding-left: 0;
 }
