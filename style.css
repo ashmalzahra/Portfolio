@@ -445,13 +445,14 @@ input:invalid:required {
 }
 
 .form .touch:hover {
-  background: #FFF5E1;
-  color: #F55800;
+  background: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
 }
 
 .form .touch:active {
- background: #E05304;
- color: #F4F1F0;
+  background: #e05304;
+  color: #f4f1f0;
 }
 
 #third-line {
