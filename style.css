@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 body,
 html {
   position: absolute;
@@ -287,11 +293,11 @@ div p {
 /* About me section */
 
 .about-me {
-  height: 700px;
   background: #1c1a19;
   background-image: url(images/about.png);
   background-repeat: no-repeat;
-  background-position: 100% 100%;
+  background-position-x: 100%;
+  background-position-y: 27%;
   display: flex;
   flex-direction: column;
 }
@@ -374,4 +380,78 @@ div p {
   font-size: 22px;
   line-height: 43px;
   color: #fff;
+}
+
+.form {
+  background-color: #fff;
+  padding: 120px 0 0;
+  text-align: center;
+}
+
+.form h2 {
+  color: #172B4D;
+  font-weight: 700;
+  font-size: 32px;
+  padding: 0 24px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.form form {
+  width: 100%;
+  padding: 40px 24px 80px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #3C3A39;
+  padding: 16px;
+  outline: none;
+  border: none;
+  margin: 24px auto;
+}
+
+.form input {
+  border-bottom: 1px solid #DFE1E6;
+}
+
+.form textarea {
+  background-color: #FBF8F7;
+}
+
+.form textarea::placeholder {
+  color: #3C3A39;
+}
+
+.form .touch {
+  text-align: center;
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  margin: auto;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 15px;
+}
+
+#third-line {
+  width: 100%;
+}
+
+.tags {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 12px 0;
+}
+
+.tags li {
+  background: #505F79;
 }
