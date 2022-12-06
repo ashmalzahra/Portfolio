@@ -78,7 +78,6 @@ h1 {
   font-family: "Crete Round", serif;
   font-size: 56px;
   width: 327px;
-  height: 110px;
   align-self: flex-start;
   left: 24px;
   margin-top: 0;
@@ -200,7 +199,6 @@ div p {
 }
 
 #languages li {
-  height: 20px;
   margin-right: 12px;
   padding: 10px 12px 10px 12px;
   font-family: 'Inter', sans-serif;
@@ -382,6 +380,8 @@ div p {
   color: #fff;
 }
 
+/* form section */
+
 .form {
   background-color: #fff;
   padding: 120px 0 0;
@@ -389,7 +389,7 @@ div p {
 }
 
 .form h2 {
-  color: #172B4D;
+  color: #172b4d;
   font-weight: 700;
   font-size: 32px;
   padding: 0 24px;
@@ -408,7 +408,7 @@ div p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 15px;
-  color: #3C3A39;
+  color: #3c3a39;
   padding: 16px;
   outline: none;
   border: none;
@@ -416,28 +416,19 @@ div p {
 }
 
 .form input {
-  border-bottom: 1px solid #DFE1E6;
-}
-
-input:invalid {
-  border: 2px dashed red;
+  border-bottom: 1px solid #dfe1e6;
 }
 
 input:invalid:required {
-  background-image: linear-gradient(to right, pink, lightgreen);
+  background-image: rgb(255, 0, 128);
 }
-
-input:valid {
-  border: 2px solid black;
-}
-
 
 .form textarea {
-  background-color: #FBF8F7;
+  background-color: #fbf8f7;
 }
 
 .form textarea::placeholder {
-  color: #3C3A39;
+  color: #3c3a39;
 }
 
 .form .touch {
@@ -446,11 +437,19 @@ input:valid {
   color: #fff;
   border: none;
   margin: auto;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   padding: 15px;
+}
+
+.form .touch:hover {
+  background-color: #000;
+}
+
+.form .touch:active {
+  background-color: #ff0055e5;
 }
 
 #third-line {
@@ -463,8 +462,4 @@ input:valid {
   justify-content: center;
   gap: 24px;
   padding: 12px 0;
-}
-
-.form .touch:hover{
-  color: #000;
 }
