@@ -419,6 +419,19 @@ div p {
   border-bottom: 1px solid #DFE1E6;
 }
 
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+
 .form textarea {
   background-color: #FBF8F7;
 }
@@ -452,6 +465,6 @@ div p {
   padding: 12px 0;
 }
 
-.tags li {
-  background: #505F79;
+.form .touch:hover{
+  color: #000;
 }
