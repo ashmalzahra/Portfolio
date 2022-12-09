@@ -12,7 +12,6 @@
 body,
 html {
   margin: 0;
-
 }
 
 /* main page */
@@ -47,28 +46,28 @@ nav {
   margin-top: auto;
 }
 
-@media (max-width:767px) {
-  nav a{
+@media (max-width: 767px) {
+  nav a {
     display: none;
   }
 }
 
-@media (min-width:768px) {
-   nav {
+@media (min-width: 768px) {
+  nav {
     display: flex;
     margin-right: 6%;
     padding-right: 55px;
     gap: 5px;
   }
-  .mail{
-    padding: 0 5px;
 
+  .mail {
+    padding: 0 5px;
   }
-  .menu{
+
+  .menu {
     display: none;
   }
 }
-
 
 nav button {
   background: transparent;
@@ -97,13 +96,14 @@ main {
   background-repeat: no-repeat;
 }
 
-@media (min-width:768px){
-  .container{
+@media (min-width: 768px) {
+  .container {
     background-image: url(images/Illustration-header.png);
     background-position: 100%;
     background-size: 40%;
     padding-left: 0;
   }
+
   .container h1 {
     width: 566px;
     font-weight: 400;
@@ -111,6 +111,7 @@ main {
     margin-bottom: 0;
     padding-left: 150px;
   }
+
   .container h2 {
     width: 566px;
     font-weight: 500;
@@ -118,14 +119,16 @@ main {
     line-height: 44px;
     padding-left: 150px;
   }
-  div p{
+
+  div p {
     width: 566px;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
     padding-left: 150px;
   }
-   .socials{
+
+  .socials {
     flex-direction: column;
     position: absolute;
     bottom: 10%;
@@ -197,19 +200,20 @@ div p {
   flex-direction: column;
 }
 
-@media (min-width:768px){
-  .work{
+@media (min-width: 768px) {
+  .work {
     grid-template-columns: auto 29% 29% 29% 0;
     padding-bottom: 120px;
     row-gap: 1.6%;
     column-gap: 1.6%;
     padding-top: 10%;
     grid-template-areas:
-    ". first second second ."
-    ". main main main ."
-    ". one two three ."
-    ". four five six .";
+      ". first second second ."
+      ". main main main ."
+      ". one two three ."
+      ". four five six .";
   }
+
   .heading {
     font-family: "Crete Round", sans-serif;
     width: 315px;
@@ -220,89 +224,89 @@ div p {
     padding-bottom: 0;
   }
 
-  #line{
-      border: 1px solid #212121;
-      align-self: center;
-      color: #212121;
-      grid-area: second;
-      margin: auto 0;  
+  #line {
+    border: 1px solid #212121;
+    align-self: center;
+    color: #212121;
+    grid-area: second;
+    margin: auto 0;
   }
-  
-  .desktop-project{
+
+  .desktop-project {
     grid-area: main;
     width: 55%;
     height: auto;
     margin-top: 8%;
   }
 
-   .main-project{
+  .main-project {
     display: none;
   }
 
-  .text{
+  .text {
     margin-left: 58%;
     grid-area: main;
     margin-top: 8%;
   }
 
-  #one{
-    grid-area: one;
-    background-image: url(images/one.png);
-    border: 2px solid #091E42;
-  }
-
-  #one > *{
+  .project .button {
     display: none;
   }
 
-  #one .button{
+  #one {
+    grid-area: one;
+    background-image: url(images/one.png);
+    border: 2px solid #091e42;
+  }
+
+  #one > * {
+    display: none;
+  }
+
+  #one .button {
     display: block;
     right: 0;
     left: 0;
   }
 
-  #two{
+  #two {
     grid-area: two;
     background-image: url(images/two.png);
   }
 
-  .mobile-version{
+  .mobile-version {
     display: none;
   }
 
-  .project .button{
-    display: none;
-  }
-
-  #three{
+  #three {
     grid-area: three;
     background-image: url(images/three.png);
   }
 
-  #three h2{
+  #three h2 {
     height: 42px;
   }
 
-  #four{
+  #four {
     grid-area: four;
     background-image: url(images/background-img.png);
   }
 
-  #five{
+  #five {
     grid-area: five;
     background-image: url(images/two.png);
   }
 
-  #six{
+  #six {
     grid-area: six;
     background-image: url(images/three.png);
   }
 
-  #six h2{
+  #six h2 {
     height: 42px;
   }
 
-  .project{
+  .project {
     max-width: 100%;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -310,8 +314,8 @@ div p {
   }
 }
 
-@media (max-width:767px) {
-  .desktop-version{
+@media (max-width: 767px) {
+  .desktop-version {
     display: none;
   }
 }
@@ -328,22 +332,23 @@ div p {
     margin-top: 120px;
   }
 }
-  
- @media (max-width: 767px) {
+
+@media (max-width: 767px) {
   #line {
     width: 327px;
     margin-left: inherit;
     margin-top: 0;
     margin-bottom: 50px;
   }
- }
- 
+}
+
 @media (max-width: 767px) {
   .main-project img {
     width: 327px;
     height: 237px;
     top: 307px;
   }
+
   .desktop-project {
     display: none;
   }
@@ -510,32 +515,32 @@ div p {
 }
 
 @media (min-width: 768px) {
-  .about-me{
+  .about-me {
     background-image: url(images/illustration-about\ me.svg);
     background-position-x: 100%;
     background-position-y: 10%;
     padding-left: 6%;
   }
 
-  .resume{
+  .resume {
     margin: 20px;
   }
 
-  .about-me div{
+  .about-me div {
     margin-top: 100px;
     margin-bottom: 100px;
   }
 
-  .lists{
+  .lists {
     display: grid;
     grid-template-columns: 0.1% 29% 29% auto;
     grid-template-rows: auto auto;
     grid-template-areas:
-    ". second second second"
-    ". lang frame skill";
+      ". second second second"
+      ". lang frame skill";
   }
 
-  #second-line{
+  #second-line {
     grid-area: second;
     width: 1156px;
     margin-left: 0;
@@ -543,15 +548,15 @@ div p {
     margin-top: 55px;
   }
 
-  .lang{
+  .lang {
     grid-area: lang;
   }
 
-  .frameworks{
+  .frameworks {
     grid-area: frame;
   }
 
-  .skill{
+  .skill {
     grid-area: skill;
   }
 }
@@ -604,7 +609,7 @@ div p {
     margin-bottom: 125px;
     border: 1px solid #fff;
     margin-top: 22px;
-  } 
+  }
 }
 
 .lists {
@@ -645,27 +650,26 @@ div p {
   text-align: center;
 }
 
-@media (min-width:768px) {
-  .form{
+@media (min-width: 768px) {
+  .form {
     display: flex;
     padding-bottom: 150px;
   }
 
-  .form h2{
+  .form h2 {
     width: 700px;
     margin-top: 25px;
     margin-left: 55px;
   }
-  
-  form{
+
+  form {
     margin-right: 142px;
   }
 
-  .form .touch{
+  .form .touch {
     align-self: flex-start;
     margin-right: 80%;
   }
-
 }
 
 .form h2 {
@@ -679,7 +683,7 @@ div p {
 
 .form form {
   width: 100%;
-  padding: 0px 24px 80px;
+  padding: 0 24px 80px;
 }
 
 .form input,
@@ -736,7 +740,7 @@ input:invalid:required {
 
 #third-line {
   width: 100%;
-  background: #DFE1E6;
+  background: #dfe1e6;
 }
 
 .tags {
