@@ -665,6 +665,11 @@ div p {
     width: 700px;
     margin-top: 25px;
     margin-left: 55px;
+    transition: all 0.3s linear;
+  }
+
+  .form h2:hover {
+    margin-left: 65px;
   }
 
   form {
