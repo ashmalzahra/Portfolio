@@ -202,7 +202,7 @@ div p {
 
 @media (min-width: 768px) {
   .work {
-    grid-template-columns: auto 29% 29% 29% 0;
+    grid-template-columns: auto 29% 29% 29% auto;
     padding-bottom: 120px;
     row-gap: 1.6%;
     column-gap: 1.6%;
@@ -216,13 +216,12 @@ div p {
 
   .heading {
     font-family: "Crete Round", sans-serif;
-    width: 315px;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 3.25vw;
     grid-area: first;
-    margin-left: 60px;
     color: #091e42;
+    width: 100%;
+    padding-bottom: 0;
   }
 
   #line {
@@ -235,7 +234,6 @@ div p {
   .desktop-project {
     grid-area: main;
     width: 55%;
-    height: auto;
     margin-top: 8%;
   }
 
@@ -246,7 +244,7 @@ div p {
   .text {
     margin-left: 58%;
     grid-area: main;
-    margin-top: 8%;
+    margin-top: 6%;
   }
 
   .project .button {
@@ -542,10 +540,10 @@ div p {
 
   #second-line {
     grid-area: second;
-    width: 1156px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0%;
+    margin-right: 10%;
     margin-top: 55px;
+    align-self: center;
   }
 
   .lang {
