@@ -11,9 +11,8 @@
 
 body,
 html {
-  position: absolute;
   margin: 0;
-  width: 375px;
+
 }
 
 /* main page */
@@ -22,11 +21,13 @@ header {
   background: #3c3c3c;
   margin: 0;
   display: flex;
+  width: 100%;
+  height: 60px;
   justify-content: space-between;
-  height: 70px;
 }
 
 header a {
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: bold;
@@ -45,6 +46,29 @@ nav {
   align-self: flex-end;
   margin-top: auto;
 }
+
+@media (max-width:767px) {
+  nav a{
+    display: none;
+  }
+}
+
+@media (min-width:768px) {
+   nav {
+    display: flex;
+    margin-right: 6%;
+    padding-right: 55px;
+    gap: 5px;
+  }
+  .mail{
+    padding: 0 5px;
+
+  }
+  .menu{
+    display: none;
+  }
+}
+
 
 nav button {
   background: transparent;
@@ -71,6 +95,42 @@ main {
   background-image: url(images/Group.png);
   background-position: 100% 115%;
   background-repeat: no-repeat;
+}
+
+@media (min-width:768px){
+  .container{
+    background-image: url(images/Illustration-header.png);
+    background-position: 100%;
+    background-size: 40%;
+    padding-left: 0;
+  }
+  .container h1 {
+    width: 566px;
+    font-weight: 400;
+    font-size: 72px;
+    margin-bottom: 0;
+    padding-left: 150px;
+  }
+  .container h2 {
+    width: 566px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    padding-left: 150px;
+  }
+  div p{
+    width: 566px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    padding-left: 150px;
+  }
+   .socials{
+    flex-direction: column;
+    position: absolute;
+    bottom: 10%;
+    left: 1.5%;
+  }
 }
 
 h1 {
@@ -108,7 +168,6 @@ div p {
 .socials {
   list-style: none;
   display: flex;
-  width: 100%;
   padding-left: 0;
   margin-left: 22px;
   margin-top: 0;
@@ -138,28 +197,156 @@ div p {
   flex-direction: column;
 }
 
-.heading h3 {
-  width: 327px;
-  color: #1c1a19;
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  height: 50px;
-  margin-top: 120px;
+@media (min-width:768px){
+  .work{
+    grid-template-columns: auto 29% 29% 29% 0;
+    padding-bottom: 120px;
+    row-gap: 1.6%;
+    column-gap: 1.6%;
+    padding-top: 10%;
+    grid-template-areas:
+    ". first second second ."
+    ". main main main ."
+    ". one two three ."
+    ". four five six .";
+  }
+  .heading {
+    font-family: "Crete Round", sans-serif;
+    width: 315px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    grid-area: first;
+    padding-bottom: 0;
+  }
+
+  #line{
+      border: 1px solid #212121;
+      align-self: center;
+      color: #212121;
+      grid-area: second;
+      margin: auto 0;  
+  }
+  
+  .desktop-project{
+    grid-area: main;
+    width: 55%;
+    height: auto;
+    margin-top: 8%;
+  }
+
+   .main-project{
+    display: none;
+  }
+
+  .text{
+    margin-left: 58%;
+    grid-area: main;
+    margin-top: 8%;
+  }
+
+  #one{
+    grid-area: one;
+    background-image: url(images/one.png);
+    border: 2px solid #091E42;
+  }
+
+  #one > *{
+    display: none;
+  }
+
+  #one .button{
+    display: block;
+    right: 0;
+    left: 0;
+  }
+
+  #two{
+    grid-area: two;
+    background-image: url(images/two.png);
+  }
+
+  .mobile-version{
+    display: none;
+  }
+
+  .project .button{
+    display: none;
+  }
+
+  #three{
+    grid-area: three;
+    background-image: url(images/three.png);
+  }
+
+  #three h2{
+    height: 42px;
+  }
+
+  #four{
+    grid-area: four;
+    background-image: url(images/background-img.png);
+  }
+
+  #five{
+    grid-area: five;
+    background-image: url(images/two.png);
+  }
+
+  #six{
+    grid-area: six;
+    background-image: url(images/three.png);
+  }
+
+  #six h2{
+    height: 42px;
+  }
+
+  .project{
+    max-width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    justify-content: flex-end;
+  }
 }
 
-.heading #line {
-  width: 327px;
-  margin-left: inherit;
-  margin-top: 0;
-  margin-bottom: 50px;
+@media (max-width:767px) {
+  .desktop-version{
+    display: none;
+  }
 }
 
-.main-project img {
-  width: 327px;
-  height: 237px;
-  top: 307px;
+@media (max-width: 767px) {
+  .heading {
+    width: 327px;
+    color: #1c1a19;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    height: 50px;
+    margin-top: 120px;
+  }
+}
+  
+ @media (max-width: 767px) {
+  #line {
+    width: 327px;
+    margin-left: inherit;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+ }
+ 
+@media (max-width: 767px) {
+  .main-project img {
+    width: 327px;
+    height: 237px;
+    top: 307px;
+  }
+  .desktop-project {
+    display: none;
+  }
 }
 
 .text h2 {
@@ -223,6 +410,17 @@ div p {
   background: #ff6a00e5;
 }
 
+.text .see-project:hover {
+  background: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+.text .see-project:active {
+  background: #e05304;
+  color: #f4f1f0;
+}
+
 .project {
   background-image: url(images/background-img.png);
   width: 327px;
@@ -275,7 +473,6 @@ div p {
 
 .button {
   background: #ff6b00;
-  width: 327px;
   border: none;
   height: 50px;
   left: 0;
@@ -288,6 +485,17 @@ div p {
   color: white;
 }
 
+.project .button:hover {
+  background: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+.project .button:active {
+  background: #e05304;
+  color: #f4f1f0;
+}
+
 /* About me section */
 
 .about-me {
@@ -298,6 +506,54 @@ div p {
   background-position-y: 27%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .about-me{
+    background-image: url(images/illustration-about\ me.svg);
+    background-position-x: 100%;
+    background-position-y: 10%;
+    padding-left: 6%;
+  }
+
+  .resume{
+    margin: 20px;
+  }
+
+  .about-me div{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .lists{
+    display: grid;
+    grid-template-columns: 0.1% 29% 29% auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    ". second second second"
+    ". lang frame skill";
+  }
+
+  #second-line{
+    grid-area: second;
+    width: 1156px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 55px;
+  }
+
+  .lang{
+    grid-area: lang;
+  }
+
+  .frameworks{
+    grid-area: frame;
+  }
+
+  .skill{
+    grid-area: skill;
+  }
 }
 
 .about-me h2 {
@@ -340,19 +596,20 @@ div p {
   padding: 10px;
 }
 
-#second-line {
-  width: 327px;
-  height: 0;
-  left: 0;
-  right: 0;
-  margin-bottom: 125px;
-  border: 1px solid #fff;
-  margin-top: 22px;
+@media (max-width: 767px) {
+  #second-line {
+    height: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 125px;
+    border: 1px solid #fff;
+    margin-top: 22px;
+  } 
 }
 
 .lists {
   background: #1c1a19;
-  margin-top: 250px;
+  margin-top: 180px;
 }
 
 .lists ul {
@@ -388,6 +645,29 @@ div p {
   text-align: center;
 }
 
+@media (min-width:768px) {
+  .form{
+    display: flex;
+    padding-bottom: 150px;
+  }
+
+  .form h2{
+    width: 700px;
+    margin-top: 25px;
+    margin-left: 55px;
+  }
+  
+  form{
+    margin-right: 142px;
+  }
+
+  .form .touch{
+    align-self: flex-start;
+    margin-right: 80%;
+  }
+
+}
+
 .form h2 {
   color: #172b4d;
   font-weight: 700;
@@ -399,7 +679,7 @@ div p {
 
 .form form {
   width: 100%;
-  padding: 40px 24px 80px;
+  padding: 0px 24px 80px;
 }
 
 .form input,
@@ -436,7 +716,6 @@ input:invalid:required {
   background-color: #ff6b00;
   color: #fff;
   border: none;
-  margin: auto;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -457,6 +736,7 @@ input:invalid:required {
 
 #third-line {
   width: 100%;
+  background: #DFE1E6;
 }
 
 .tags {

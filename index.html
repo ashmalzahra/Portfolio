@@ -16,6 +16,12 @@
             <button type="button" class="menu">
                 <img src="images/Union.png" alt="Menu">
             </button>
+            <a class= "desktop-link" href="#">Portfolio</a>
+            <a class= "desktop-link" href="#">About</a>
+            <a class= "desktop-link" href="#">Contact</a>
+            <a class= "desktop-link mail" href="#">
+                <img src="images/mail.png" alt="email">
+            </a>
         </nav>
     </header>
     <main>
@@ -24,7 +30,7 @@
             <h2>I am a Software Developer</h2>
             <div>
                 <p>I can help build you a product, feature or website. Look through some of my work and experience! If
-                    you like what you see and have a project you need coded, don't hesitate to contact me.</p>
+                you like what you see and have a project you need coded, don't hesitate to contact me.</p>
             </div>
             <ul class="socials">
                 <li>
@@ -50,12 +56,10 @@
             </ul>
         </section>
         <section class="work">
-            <div class="heading">
-                <h3>My Recent Works</h3>
+                <h3 class="heading">My Recent Works</h3>
                 <hr id="line">
-            </div>
-            <div class="main-project">
-                <img src="images/ImgPlaceholder1.png" alt="image-one">
+                <img class="main-project" src="images/ImgPlaceholder1.png" alt="image-one">
+                <img class= "desktop-project" src="images/larger Placeholder.png" alt="image-one">
                 <article class="text">
                     <h2>Multi-Post Stories</h2>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
@@ -69,8 +73,8 @@
                     </ul>
                     <button class="see-project" type="button">See Project</button>
                 </article>
-            </div>
-            <article class="project">
+        
+            <article class="project" id="one">
                 <h2>Professional Art <br> Printing Data</h2>
                 <p>A daily selection of privately personalized needs; no accounts or sign-ups required. has been the
                     industry's standard</p>
@@ -81,7 +85,31 @@
                 </ul>
                 <button class="button" type="button">See Project</button>
             </article>
-            <article class="project">
+            <article class="project" id="two">
+                <h2 class="mobile-version">Professional Art <br> Printing Data</h2>
+                <h2 class="desktop-version">Data Dashboard <br> Healthcare</h2>
+                <p>A daily selection of privately personalized needs; no accounts or sign-ups required. has been the
+                    industry's standard</p>
+                <ul class="languages">
+                    <li>html</li>
+                    <li>bootstrap</li>
+                    <li>Ruby</li>
+                </ul>
+                <button class="button" type="button">See Project</button>
+            </article>
+            <article class="project" id="three">
+                <h2 class="mobile-version">Professional Art <br> Printing Data</h2>
+                <h2 class="desktop-version">Website Portfolio</h2>
+                <p>A daily selection of privately personalized needs; no accounts or sign-ups required. has been the
+                    industry's standard</p>
+                <ul class="languages">
+                    <li>html</li>
+                    <li>bootstrap</li>
+                    <li>Ruby</li>
+                </ul>
+                <button class="button" type="button">See Project</button>
+            </article>
+            <article class="project" id="four">
                 <h2>Professional Art <br> Printing Data</h2>
                 <p>A daily selection of privately personalized needs; no accounts or sign-ups required. has been the
                     industry's standard</p>
@@ -92,8 +120,9 @@
                 </ul>
                 <button class="button" type="button">See Project</button>
             </article>
-            <article class="project">
-                <h2>Professional Art <br> Printing Data</h2>
+            <article class="project" id="five">
+                <h2 class="mobile-version">Professional Art <br> Printing Data</h2>
+                <h2 class="desktop-version">Data Dashboard <br> Healthcare</h2>
                 <p>A daily selection of privately personalized needs; no accounts or sign-ups required. has been the
                     industry's standard</p>
                 <ul class="languages">
@@ -103,30 +132,9 @@
                 </ul>
                 <button class="button" type="button">See Project</button>
             </article>
-            <article class="project">
-                <h2>Professional Art <br> Printing Data</h2>
-                <p>A daily selection of privately personalized needs; no accounts or sign-ups required. has been the
-                    industry's standard</p>
-                <ul class="languages">
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                </ul>
-                <button class="button" type="button">See Project</button>
-            </article>
-            <article class="project">
-                <h2>Professional Art <br> Printing Data</h2>
-                <p>A daily selection of privately personalized needs; no accounts or sign-ups required. has been the
-                    industry's standard</p>
-                <ul class="languages">
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                </ul>
-                <button class="button" type="button">See Project</button>
-            </article>
-            <article class="project">
-                <h2>Professional Art <br> Printing Data</h2>
+            <article class="project" id="six">
+                <h2 class="mobile-version">Professional Art <br> Printing Data</h2>
+                <h2 class="desktop-version">Website Portfolio</h2>
                 <p>A daily selection of privately personalized needs; no accounts or sign-ups required. has been the
                     industry's standard</p>
                 <ul class="languages">
@@ -145,7 +153,7 @@
             <button class="resume" type="button">Get my resume</button>
             <div class="lists">
                 <hr id="second-line">
-                <ul>
+                <ul class="lang">
                     <li class="bold">
                         <img src="images/Rectangle 55.png" alt="rhombus">
                         Language
@@ -156,9 +164,8 @@
                         <li>Html</li>
                         <li>Css</li>
                     </ul>
-
                 </ul>
-                <ul>
+                <ul class="frameworks">
                     <li class="bold">
                         <img src="images/Rectangle 56.png" alt="rectangle">
                         Frameworks
@@ -173,7 +180,7 @@
                     </ul>
 
                 </ul>
-                <ul>
+                <ul class="skill">
                     <li class="bold">
                         <img src="images/Rectangle 57.png" alt="circle">
                         Skills
@@ -198,6 +205,8 @@
                     maxlength="500"></textarea>
                 <button class="touch" type="submit">Get in touch</button>
             </form>
+        </section>
+        <footer>
             <hr id="third-line">
             <ul class="tags">
                 <li>
@@ -221,7 +230,7 @@
                     </a>
                 </li>
             </ul>
-        </section>
+        </footer>
     </main>
 </body>
 
