@@ -221,13 +221,13 @@ div p {
     font-size: 40px;
     line-height: 52px;
     grid-area: first;
-    padding-bottom: 0;
+    margin-left: 60px;
+    color: #091e42;
   }
 
   #line {
-    border: 1px solid #212121;
+    border: 1px solid #9c9494;
     align-self: center;
-    color: #212121;
     grid-area: second;
     margin: auto 0;
   }
