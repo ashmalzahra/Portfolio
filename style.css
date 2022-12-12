@@ -309,6 +309,11 @@ div p {
     margin-bottom: 0;
     padding-bottom: 0;
     justify-content: flex-end;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .project:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -597,6 +602,12 @@ div p {
   font-size: 17px;
   line-height: 24px;
   padding: 10px;
+  transition: all 0.5s ease-out;
+}
+
+.resume:hover {
+  background-color: #fff;
+  color: #e05304;
 }
 
 @media (max-width: 767px) {
@@ -658,6 +669,11 @@ div p {
     width: 700px;
     margin-top: 25px;
     margin-left: 55px;
+    transition: all 0.3s linear;
+  }
+
+  .form h2:hover {
+    margin-left: 65px;
   }
 
   form {
