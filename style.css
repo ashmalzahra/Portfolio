@@ -251,6 +251,14 @@ div p {
     display: none;
   }
 
+  .project h2:hover {
+    color: #ff6a00e5;
+  }
+
+  .project p:hover {
+    color: #ff6a00e5;
+  }
+
   #one {
     grid-area: one;
     background-image: url(images/one.png);
