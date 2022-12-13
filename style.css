@@ -250,7 +250,11 @@ div p {
   .project .button {
     display: none;
   }
-
+  
+  .project h2,
+  .project p:hover{
+    color: black;
+  }
   #one {
     grid-area: one;
     background-image: url(images/one.png);
