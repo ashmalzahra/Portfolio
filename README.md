@@ -19,8 +19,6 @@
 
 > This is a simple replica of the [template 2](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A27&t=9GufdfER8lvr1MpO-0) for portfolio setup. 
 
-[Live Link](https://ashmalzahra.github.io/Portfolio/)
-
 
 ## Built With
 
@@ -38,11 +36,12 @@ Clone this repository to get started with the project, make sure to configure li
 
 
 ### Run tests
-After pushing the changes on github, merge your pull request and let github action process changes.
+After pushing the changes on github, merge your pull request and let github action process changes and fix errors, if any.
+For stylelint errors run:<code>sudo npx stylelint "**/*.{css,scss}" --fix</code> for automatic fix.
 
 ### Deployment
-Check for the tests when you generate a pull request and fix errors, if any.
-For stylelint errors run:<code>sudo npx stylelint "**/*.{css,scss}" --fix</code> for automatic fix.
+[Live Link](https://ashmalzahra.github.io/Portfolio/)
+[Project Outline Presentation](https://www.loom.com/share/b51d8d65975544e88a39418e84689031)
 
 ## Authors
 
