@@ -31,17 +31,17 @@ Clone this repository to get started with the project, make sure to configure li
 
 
 ### Setup
--Clone the folder to your local machine.
--Open the index.html file in your brower.
+- Clone the folder to your local machine.
+- Open the index.html file in your brower.
 
 
 ### Run tests
-After pushing the changes on github, merge your pull request and let github action process changes and fix errors, if any.
-For stylelint errors run:<code>sudo npx stylelint "**/*.{css,scss}" --fix</code> for automatic fix.
+- After pushing the changes on github, merge your pull request and let github action process changes and fix errors, if any.
+- For stylelint errors run:<code>sudo npx stylelint "**/*.{css,scss}" --fix</code> for automatic fix.
 
 ### Deployment
-[Live Link](https://ashmalzahra.github.io/Portfolio/)
-[Project Outline Presentation](https://www.loom.com/share/b51d8d65975544e88a39418e84689031)
+- [Live Link](https://ashmalzahra.github.io/Portfolio/)
+- [Project Outline Presentation](https://www.loom.com/share/b51d8d65975544e88a39418e84689031)
 
 ## Authors
 
