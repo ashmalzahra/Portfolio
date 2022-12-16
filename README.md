@@ -40,8 +40,8 @@ Clone this repository to get started with the project, make sure to configure li
 - For stylelint errors run:<code>sudo npx stylelint "**/*.{css,scss}" --fix</code> for automatic fix.
 
 ### Deployment
-- [Live Link](https://ashmalzahra.github.io/Portfolio/)
-- [Project Outline Presentation](https://www.loom.com/share/b51d8d65975544e88a39418e84689031)
+[Live Link](https://ashmalzahra.github.io/Portfolio/)
+
 
 ## Authors
 
