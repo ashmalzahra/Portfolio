@@ -75,9 +75,17 @@ nav button {
   cursor: pointer;
 }
 
+.desktop-menu {
+  display: flex;
+}
+
 button img {
   width: 20px;
   height: 13px;
+}
+
+.mobile-menu {
+  display: none;
 }
 
 main {
