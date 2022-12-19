@@ -23,6 +23,16 @@
                 <img src="images/mail.png" alt="email">
             </a>
         </nav>
+        <div class="mobile-menu">
+            <button type="button" class="close">
+                <img src="images/close.png" alt="Close">
+            </button>
+            <ul class="mobile-menu">
+                <li><a class="mobile-menu-item" href="#portfolio">Portfolio</a></li>
+                <li><a class="mobile-menu-item" href="#about">About</a></li>
+                <li><a class="mobile-menu-item" href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <section class="container">
@@ -55,7 +65,7 @@
                 </li>
             </ul>
         </section>
-        <section class="work">
+        <section class="work" id="portfolio">
             <h3 class="heading">My Recent Works</h3>
             <hr id="line">
             <img class="main-project" src="images/ImgPlaceholder1.png" alt="image-one">
@@ -145,7 +155,7 @@
                 <button class="button" type="button">See Project</button>
             </article>
         </section>
-        <section class="about-me">
+        <section class="about-me" id="about">
             <h2>About Me</h2>
             <p>Hello I'm a software developer! I can help you build a product, feature or website. Look through some of
                 my work and experience. If you like what you see and have a project you need coded, don't hesitate to
@@ -196,7 +206,7 @@
                 </ul>
             </div>
         </section>
-        <section class="form">
+        <section class="form" id="contact">
             <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
             <form action="https://formspree.io/f/{form_id}" method="post">
                 <label for="Name" style="display: none;"></label>
