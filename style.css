@@ -81,11 +81,41 @@ nav button {
 
 button img {
   width: 20px;
-  height: 13px;
 }
 
 .mobile-menu {
-  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: #3c3a39;
+}
+
+.mobile-menu ul {
+  margin-top: 92px;
+  padding-left: 0;
+  list-style: none;
+}
+
+div button {
+  background: transparent;
+  border: none;
+  top: 3%;
+  position: absolute;
+  left: 85%;
+}
+
+.menu-line {
+  width: 325px;
+  background: #1c1a19;
+}
+
+.mobile-menu ul li a {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  color: #fff5e1;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
 }
 
 main {
@@ -110,6 +140,10 @@ main {
     background-position: 100%;
     background-size: 40%;
     padding-left: 0;
+  }
+
+  .menu img {
+    display: none;
   }
 
   .container h1 {
