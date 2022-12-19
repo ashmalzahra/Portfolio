@@ -20,3 +20,22 @@ closeBtn.addEventListener('click', hideMenu);
 mobileMenuItem1.addEventListener('click', hideMenu);
 mobileMenuItem2.addEventListener('click', hideMenu);
 mobileMenuItem3.addEventListener('click', hideMenu);
+
+function myFunction(desktopView) {
+  if (desktopView.matches)
+  {
+    mobileMenu.style.display = 'none';
+    menuBtn.style.display = 'none';
+  }
+  else
+  {
+    menuBtn.style.display = 'block';
+    mobileMenu.style.display = 'none';
+  }
+}
+
+const desktopView =  window.matchMedia("(min-width: 768px)")
+
+myFunction(desktopView);
+
+desktopView.addListener(myFunction);
