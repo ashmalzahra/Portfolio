@@ -75,9 +75,54 @@ nav button {
   cursor: pointer;
 }
 
+.desktop-menu {
+  display: flex;
+}
+
 button img {
   width: 20px;
-  height: 13px;
+}
+
+.mobile-menu {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: #3c3a39;
+}
+
+.mobile-menu ul {
+  margin-top: 80px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+}
+
+.close {
+  background: transparent;
+  border: none;
+  top: 5%;
+  position: absolute;
+  left: 85%;
+}
+
+.mobile-menu-item1,
+.mobile-menu-item2,
+.mobile-menu-item3 {
+  padding: 20px;
+  border-bottom: 1px solid #6f6c6b;
+}
+
+.mobile-menu ul li a {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  color: #fff5e1;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+  text-align: left;
+  margin-left: 0;
 }
 
 main {
@@ -102,6 +147,10 @@ main {
     background-position: 100%;
     background-size: 40%;
     padding-left: 0;
+  }
+
+  .menu img {
+    display: none;
   }
 
   .container h1 {

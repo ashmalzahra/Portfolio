@@ -7,22 +7,38 @@
     <meta name="viewport" content="width=device-width" , initial-scale=1.0>
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" href="http://fonts.googleapis.com/css?family=Roboto">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
     <header>
         <a href="/index.html">Ashmal Zahra </a>
         <nav>
-            <button type="button" class="menu">
-                <img src="images/Union.png" alt="Menu">
-            </button>
-            <a class="desktop-link" href="#">Portfolio</a>
-            <a class="desktop-link" href="#">About</a>
-            <a class="desktop-link" href="#">Contact</a>
-            <a class="desktop-link mail" href="#">
-                <img src="images/mail.png" alt="email">
-            </a>
+            <div class="desktop-menu">
+                <button type="button" class="menu">
+                    <img src="images/Union.png" alt="Menu">
+                </button>
+                <a class="desktop-link" href="#">Portfolio</a>
+                <a class="desktop-link" href="#">About</a>
+                <a class="desktop-link" href="#">Contact</a>
+                <a class="desktop-link mail" href="#">
+                    <img src="images/mail.png" alt="email">
+                </a>
+            </div>
         </nav>
+        <div class="mobile-menu">
+            <button type="button" class="close">
+                <img src="images/close.png" alt="Close">
+            </button>
+            <ul class="mobile-menu">
+                <li class="mobile-menu-item1"><a href="#portfolio">Portfolio</a></li>
+
+                <li class="mobile-menu-item2"><a href="#about">About</a></li>
+
+                <li class="mobile-menu-item3"><a href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
     </header>
     <main>
         <section class="container">
@@ -55,7 +71,7 @@
                 </li>
             </ul>
         </section>
-        <section class="work">
+        <section class="work" id="portfolio">
             <h3 class="heading">My Recent Works</h3>
             <hr id="line">
             <img class="main-project" src="images/ImgPlaceholder1.png" alt="image-one">
@@ -145,7 +161,7 @@
                 <button class="button" type="button">See Project</button>
             </article>
         </section>
-        <section class="about-me">
+        <section class="about-me" id="about">
             <h2>About Me</h2>
             <p>Hello I'm a software developer! I can help you build a product, feature or website. Look through some of
                 my work and experience. If you like what you see and have a project you need coded, don't hesitate to
@@ -196,7 +212,7 @@
                 </ul>
             </div>
         </section>
-        <section class="form">
+        <section class="form" id="contact">
             <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
             <form action="https://formspree.io/f/{form_id}" method="post">
                 <label for="Name" style="display: none;"></label>
