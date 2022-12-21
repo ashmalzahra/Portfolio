@@ -1,7 +1,7 @@
 const projects = [
   {
-    class1: 'heading',
     title1: 'My Recent Works',
+    class1: 'heading',
     img: 'images/ImgPlaceholder1.png',
     class: 'text',
     title: 'Multi-Post Stories',
@@ -11,79 +11,67 @@ const projects = [
     secondButton: 'See Source',
     index: 0,
   },
-
   {
     id: 'one',
-    title: 'Professional Art <br> Printing Date',
-    description: "A daily selection of privately personalized needs; no accounts or sign-ups required. has been the industry's standard",
+    title: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
     firstButton: 'See Live',
     secondButton: 'See Source',
-    button: 'See Project',
     index: 0,
     class: 'project',
   },
-
   {
     id: 'two',
-    title: 'Professional Art <br> Printing Date',
+    title: 'Profesional Art Printing Data',
     title2: 'Data Dashboard <br> Healthcare',
-    description: "A daily selection of privately personalized needs; no accounts or sign-ups required. has been the industry's standard",
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
     firstButton: 'See Live',
     secondButton: 'See Source',
-    button: 'See Project',
     index: 0,
     class: 'project',
   },
-
   {
     id: 'three',
-    title: 'Professional Art Printing Date',
-    title2: 'Website Portfolio',
-    description: "A daily selection of privately personalized needs; no accounts or sign-ups required. has been the industry's standard",
+    title: 'Profesional Art Printing Data',
+    title2: 'Website Protfolio',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
     firstButton: 'See Live',
     secondButton: 'See Source',
-    button: 'See Project',
     index: 0,
     class: 'project',
   },
-
   {
     id: 'four',
-    title: 'Professional Art <br> Printing Date',
-    description: "A daily selection of privately personalized needs; no accounts or sign-ups required. has been the industry's standard",
+    title: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
     firstButton: 'See Live',
     secondButton: 'See Source',
-    button: 'See Project',
     index: 0,
     class: 'project',
   },
-
   {
     id: 'five',
-    title: 'Professional Art <br> Printing Date',
+    title: 'Profesional Art Printing Data',
     title2: 'Data Dashboard <br> Healthcare',
-    description: "A daily selection of privately personalized needs; no accounts or sign-ups required. has been the industry's standard",
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
     firstButton: 'See Live',
     secondButton: 'See Source',
-    button: 'See Project',
     index: 0,
     class: 'project',
   },
-
   {
     id: 'six',
-    title: 'Professional Art Printing Date',
-    title2: 'Website Portfolio',
-    description: "A daily selection of privately personalized needs; no accounts or sign-ups required. has been the industry's standard",
+    title: 'Profesional Art Printing Data',
+    title2: 'Website Protfolio',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
     firstButton: 'See Live',
     secondButton: 'See Source',
-    button: 'See Project',
     index: 0,
     class: 'project',
   },
@@ -98,50 +86,49 @@ let text = '';
 projects.forEach((element) => {
   if (element === projects[0]) {
     text += `
-        <h3 class="${projects[0].class1}">${projects[0].title1}</h3>
-        <hr id="line">
+    <h3 class="${projects[0].class1}">${projects[0].title1}</h3>
+    <hr id="line">
 
-        <img class="main-project" src="${projects[0].img}" alt="image-one">
+    <img class="main-project" src="${projects[0].img}" alt="GymFit">
 
-        <article class"${projects[0].class}">
-        <h2>${projects[0].title}</h2>
-        <p>${projects[0].description}</p>
-        <ul id="languages">
-        <li>${projects[0].technologies[0]}</li>
-        <li>${projects[0].technologies[1]}</li>
-        <li>${projects[0].technologies[2]}</li>
-        <li>${projects[0].technologies[3]}</li>
-        </ul>
-        
-        <button class="see-project">See Project</button>
-        </article>`;
+    <article class="${projects[0].class}">
+    <h2>${projects[0].title}</h2>
+    <p>${projects[0].description}</p>
+    <ul id="languages">
+    <li>${projects[0].technologies[0]}</li>
+    <li>${projects[0].technologies[1]}</li>
+    <li>${projects[0].technologies[2]}</li>
+    <li>${projects[0].technologies[3]}</li>
+    </ul>
+    <button class="see-project">See Project</button>
+    </article>`;
   } else if ('title2' in element) {
     text += `
-        <article class"${element.class}" id="${element.id}">
-        <h2 class"mobile-version">${element.title}</h2>
-        <h2 class"desktop-version">${element.title2}</h2>
-        <p>${element.description}</p>
-        <ul class="languages">
-        <li>${element.technologies[0]}</li>
-        <li>${element.technologies[1]}</li>
-        <li>${element.technologies[2]}</li>
-        </ul>
-
-        <button class"button">${element.button}</button>
-        </article>`;
+    <article class="${element.class}" id="${element.id}">
+    <h2 class="mobile-version">${element.title}</h2>
+    <h2 class="desktop-version">${element.title2}</h2>
+    <p>${element.description}</p>
+    <ul class="languages">
+    <li>${element.technologies[0]}</li>
+    <li>${element.technologies[1]}</li>
+    <li>${element.technologies[2]}</li>
+    </ul>
+    <button class="button">See Project</button>
+    </article>
+   `;
   } else {
     text += `
-        <article class"${element.class}" id="${element.id}">
-        <h2>${element.title}</h2>
-        <p>${element.description}</p>
-        <ul class="languages">
-        <li>${element.technologies[0]}</li>
-        <li>${element.technologies[1]}</li>
-        <li>${element.technologies[2]}</li>
-        </ul>
-
-        <button class"button">${element.button}</button>
-        </article>`;
+      <article class="${element.class}" id="${element.id}">
+      <h2>${element.title}</h2>
+      <p>${element.description}</p>
+      <ul class="languages">
+      <li>${element.technologies[0]}</li>
+      <li>${element.technologies[1]}</li>
+      <li>${element.technologies[2]}</li>
+      </ul>
+      <button class="button">See Project</button>
+      </article>
+  `;
   }
 });
 
@@ -149,20 +136,24 @@ articlesContainer.innerHTML = text;
 
 document.body.insertBefore(articlesContainer, document.body.children[2]);
 
-// const closeButton = document.querySelector('.popup #close');
-// const popupWindow = document.querySelector('.popup');
+const closebutton = document.querySelector('.popup #close');
 
-// function showPopup() {
-//   popupWindow.style.display = 'flex';
-// }
+const projectWindow = document.querySelector('.popup');
 
-// function hidePopup() {
-//   popupWindow.style.display = 'none';
-// }
+function showMenu() {
+  projectWindow.style.display = 'flex';
+}
 
-// projects.forEach((element) => {
-//   const btn = document.querySelector('.see-project .button');
-//   btn.addEventListener('click', showPopup);
-// });
+function hideMenu() {
+  projectWindow.style.display = 'none';
+}
 
-// closeButton.addEventListener('click', hidePopup);
+closebutton.addEventListener('click', hideMenu);
+
+const btn = document.querySelector('.see-project');
+btn.addEventListener('click', showMenu);
+
+const btns = document.querySelectorAll('.button');
+for (i of btns) {
+  i.addEventListener('click', showMenu);
+}
