@@ -1,69 +1,168 @@
-const popup = [
+const projects = [
   {
-    class: 'popup-title',
-    idh2: 'popupH2',
-    title: 'Multi Post Stories',
-    idbtn: 'close',
-    img1: 'images/close.png',
-    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
-    class1: 'img_description',
-    img: 'images/Snapshoot Portfolio.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    classButtons: 'popup-buttons',
-    classB: 'popup-button',
+    class1: 'heading',
+    title1: 'My Recent Works',
+    img: 'images/ImgPlaceholder1.png',
+    class: 'text',
+    title: 'Multi-Post Stories',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been theindustry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
     firstButton: 'See Live',
-    img2: 'images/Icon.png',
     secondButton: 'See Source',
-    img3: 'images/GitVector.png',
-  }];
+    index: 0,
+  },
 
-const popupContainer = document.createElement('section');
-popupContainer.classList.add('popup');
+  {
+    id: 'one',
+    title: 'Professional Art <br> Printing Date',
+    description: "A daily selection of privately personalized needs; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    firstButton: 'See Live',
+    secondButton: 'See Source',
+    button: 'See Project',
+    index: 0,
+    class: 'project',
+  },
+
+  {
+    id: 'two',
+    title: 'Professional Art <br> Printing Date',
+    title2: 'Data Dashboard <br> Healthcare',
+    description: "A daily selection of privately personalized needs; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    firstButton: 'See Live',
+    secondButton: 'See Source',
+    button: 'See Project',
+    index: 0,
+    class: 'project',
+  },
+
+  {
+    id: 'three',
+    title: 'Professional Art Printing Date',
+    title2: 'Website Portfolio',
+    description: "A daily selection of privately personalized needs; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    firstButton: 'See Live',
+    secondButton: 'See Source',
+    button: 'See Project',
+    index: 0,
+    class: 'project',
+  },
+
+  {
+    id: 'four',
+    title: 'Professional Art <br> Printing Date',
+    description: "A daily selection of privately personalized needs; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    firstButton: 'See Live',
+    secondButton: 'See Source',
+    button: 'See Project',
+    index: 0,
+    class: 'project',
+  },
+
+  {
+    id: 'five',
+    title: 'Professional Art <br> Printing Date',
+    title2: 'Data Dashboard <br> Healthcare',
+    description: "A daily selection of privately personalized needs; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    firstButton: 'See Live',
+    secondButton: 'See Source',
+    button: 'See Project',
+    index: 0,
+    class: 'project',
+  },
+
+  {
+    id: 'six',
+    title: 'Professional Art Printing Date',
+    title2: 'Website Portfolio',
+    description: "A daily selection of privately personalized needs; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    firstButton: 'See Live',
+    secondButton: 'See Source',
+    button: 'See Project',
+    index: 0,
+    class: 'project',
+  },
+];
+
+const articlesContainer = document.createElement('section');
+articlesContainer.classList.add('work');
+articlesContainer.id = 'portfolio';
 
 let text = '';
 
-text += `
-    <div class="${popup.class}">
-    <h2 id="${popup.idh2}">${popup.title}</h2>
-    <i id="${popup.idbtn}"> 
-    <img src"${popup.img1}" alt="Close">
-    </i>
-    </div>
-    <ul class="popup-list">
-    <li>${popup.technologies[0]} </li>
-    <li>${popup.technologies[1]} </li>
-    <li>${popup.technologies[2]} </li>
-    </ul>
-    <div class="${popup.class1}">
-    <img src"${popup.img}" alt="Portfolio Image">
-    <p class="popup-description"> ${popup.description} </p>
-    <div class="${popup.classButtons}">
-    <button type="button" class="${popup.classB}">
-    ${popup.firstButton}
-    <img src="${popup.img2}" alt="Icon">
-    </button>
-    <button type="button" id="source" class="${popup.classB}">
-    ${popup.secondButton}
-    <img src="${popup.img3}" alt="Github">
-    </button>
-    </div>
-    </div>
-    `;
+projects.forEach((element) => {
+  if (element === projects[0]) {
+    text += `
+        <h3 class="${projects[0].class1}">${projects[0].title1}</h3>
+        <hr id="line">
 
-popupContainer.innerHTML = text;
+        <img class="main-project" src="${projects[0].img}" alt="image-one">
 
-const closeButton = document.querySelector(`${popup.idbtn}`);
-const popupWindow = document.querySelector('.popup');
+        <article class"${projects[0].class}">
+        <h2>${projects[0].title}</h2>
+        <p>${projects[0].description}</p>
+        <ul id="languages">
+        <li>${projects[0].technologies[0]}</li>
+        <li>${projects[0].technologies[1]}</li>
+        <li>${projects[0].technologies[2]}</li>
+        <li>${projects[0].technologies[3]}</li>
+        </ul>
+        
+        <button class="see-project">See Project</button>
+        </article>`;
+  } else if ('title2' in element) {
+    text += `
+        <article class"${element.class}" id="${element.id}">
+        <h2 class"mobile-version">${element.title}</h2>
+        <h2 class"desktop-version">${element.title2}</h2>
+        <p>${element.description}</p>
+        <ul class="languages">
+        <li>${element.technologies[0]}</li>
+        <li>${element.technologies[1]}</li>
+        <li>${element.technologies[2]}</li>
+        </ul>
 
-function showPopup() {
-  popupWindow.style.display = 'flex';
-}
+        <button class"button">${element.button}</button>
+        </article>`;
+  } else {
+    text += `
+        <article class"${element.class}" id="${element.id}">
+        <h2>${element.title}</h2>
+        <p>${element.description}</p>
+        <ul class="languages">
+        <li>${element.technologies[0]}</li>
+        <li>${element.technologies[1]}</li>
+        <li>${element.technologies[2]}</li>
+        </ul>
 
-function hidePopup() {
-  popupWindow.style.display = 'none';
-}
+        <button class"button">${element.button}</button>
+        </article>`;
+  }
+});
 
-const btn = document.querySelector('.see-project .project');
-btn.addEventListener('click', showPopup);
+articlesContainer.innerHTML = text;
 
-closeButton.addEventListener('click', hidePopup);
+document.body.insertBefore(articlesContainer, document.body.children[2]);
+
+// const closeButton = document.querySelector('.popup #close');
+// const popupWindow = document.querySelector('.popup');
+
+// function showPopup() {
+//   popupWindow.style.display = 'flex';
+// }
+
+// function hidePopup() {
+//   popupWindow.style.display = 'none';
+// }
+
+// projects.forEach((element) => {
+//   const btn = document.querySelector('.see-project .button');
+//   btn.addEventListener('click', showPopup);
+// });
+
+// closeButton.addEventListener('click', hidePopup);

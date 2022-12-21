@@ -503,7 +503,7 @@ width: 153px;
   .desktop-project {
     display: none;
   }
-}
+
 
 .text h2 {
   margin-top: 13px;
@@ -650,6 +650,8 @@ width: 153px;
 .project .button:active {
   background: #e05304;
   color: #f4f1f0;
+}
+
 }
 
 /* About me section */
