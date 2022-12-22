@@ -2,7 +2,8 @@ const projects = [
   {
     title1: 'My Recent Works',
     class1: 'heading',
-    img: 'images/ImgPlaceholder1.png',
+    img1: 'images/ImgPlaceholder1.png',
+    img2: './images/larger Placeholder.png',
     class: 'text',
     title: 'Multi-Post Stories',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been theindustry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
@@ -89,7 +90,8 @@ projects.forEach((element) => {
     <h3 class="${projects[0].class1}">${projects[0].title1}</h3>
     <hr id="line">
 
-    <img class="main-project" src="${projects[0].img}" alt="GymFit">
+    <img class="main-project" src="${projects[0].img1}" alt="GymFit">
+    <img class="desktop-project" src="${projects[0].img2}" alt="GymFit">
 
     <article class="${projects[0].class}">
     <h2>${projects[0].title}</h2>
