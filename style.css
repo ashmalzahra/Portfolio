@@ -50,6 +50,11 @@ nav {
   nav a {
     display: none;
   }
+
+  .img_description {
+    justify-content: flex-start;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -232,6 +237,12 @@ div p {
   cursor: pointer;
   align-self: flex-start;
 }
+
+@media (min-width: 768px) {
+  #imgM {
+    display: none;
+  }
+}  
 
   .popup {
     background: white;
@@ -599,6 +610,12 @@ width: 153px;
   font-size: 32px;
   line-height: 44px;
   color: #fff;
+}
+
+@media (max-width: 767px) {
+  #imgD {
+    display: none;
+  }
 }
 
 .project p {
