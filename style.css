@@ -50,11 +50,6 @@ nav {
   nav a {
     display: none;
   }
-
-  .img_description {
-    justify-content: flex-start;
-  }
-
 }
 
 @media (min-width: 768px) {
@@ -238,6 +233,14 @@ div p {
   align-self: flex-start;
 }
 
+/* Popup section */
+@media (max-width: 767px) {
+  #imgD {
+    display: none;
+    justify-content: center;
+  }
+}
+
 @media (min-width: 768px) {
   #imgM {
     display: none;
@@ -296,7 +299,6 @@ div p {
   .img_description {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .popup-description {
@@ -610,12 +612,6 @@ width: 153px;
   font-size: 32px;
   line-height: 44px;
   color: #fff;
-}
-
-@media (max-width: 767px) {
-  #imgD {
-    display: none;
-  }
 }
 
 .project p {
