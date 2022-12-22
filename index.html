@@ -8,6 +8,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" href="http://fonts.googleapis.com/css?family=Roboto">
     <script src="main.js" defer></script>
+    <script src="validation" defer></script>
 </head>
 
 <body>
@@ -214,13 +215,14 @@
         </section>
         <section class="form" id="contact">
             <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-            <form action="https://formspree.io/f/{form_id}" method="post">
+            <form id= "formContact" action="https://formspree.io/f/{form_id}" method="post">
                 <label for="Name" style="display: none;"></label>
                 <input type="text" name="user_name" placeholder="Full Name" required max="30" id="Name">
                 <label for="Email" style="display: none;"></label>
                 <input type="email" name="user_mail" placeholder="Email Address" required id="Email">
                 <textarea name="message" cols="30" rows="5" placeholder="Enter text here" required
                     maxlength="500"></textarea>
+                <p class="form_message" style="display: none;"></p>
                 <button class="touch" type="submit">Get in touch</button>
             </form>
         </section>
