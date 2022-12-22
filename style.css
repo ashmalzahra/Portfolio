@@ -826,7 +826,7 @@ input:invalid:required {
   display: none;
 }
 
-.formMessage{
+.form_message{
   font-weight: 600;
 }
 

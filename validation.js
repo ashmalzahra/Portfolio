@@ -1,28 +1,19 @@
-const formContact = document.getElementById('formContact');
-const { email } = formContact.elements;
-const formMessage = document.querySelector(".form_message");
-const err = {Email_lowerCase: 'Email should be in lower case'};
+const form = document.querySelector('form');
+const email = form.querySelector('#Email');
 
-const showMessage = (isError, message) => {formMessage.classList.remove('d-none')
-if (isError){
-    formMessage.classList.remove('formValid')
-    formMessage.classList.add('formError')
-}  
-else
-{
-    formMessage.classList.add('formValid')
-    formMessage.classList.remove('formError')
-} 
-    formMessage.textContent = message;
- }
+const regex = /[A-Z]/;
 
- formContact.addEventListener('submit', (e) => {
+const message = document.createElement('p');
+message.className = 'error-message';
+message.innerText = 'Please submit your email in lower case';
+
+function validate(a) {
+  return regex.test(a);
+}
+
+form.addEventListener('submit', (e) => {
+  if (validate(email.value)) {
+    form.insertBefore(message, form.children[5]);
     e.preventDefault();
-    if(email.value === email.value.toLowerCase()){
-        showMessage(false, 'Form Validation Succeeded.');
-        formContact.submit();
-        return;
-    }
-
-    showMessage(true, err.Email_lowerCase);
- })
+  }
+});
