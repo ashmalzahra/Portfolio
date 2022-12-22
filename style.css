@@ -821,3 +821,19 @@ input:invalid:required {
   gap: 24px;
   padding: 12px 0;
 }
+
+.d-none{
+  display: none;
+}
+
+.formMessage{
+  font-weight: 600;
+}
+
+.formError{
+  color: red;
+}
+
+.formValid{
+  color: green;
+}
