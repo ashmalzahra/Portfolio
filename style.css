@@ -914,6 +914,11 @@ div p {
   .form .touch {
     align-self: flex-start;
     margin-right: 80%;
+    width: 28%;
+  }
+
+  .error-message {
+    display: flex;
   }
 }
 
@@ -994,4 +999,11 @@ input:invalid:required {
   justify-content: center;
   gap: 24px;
   padding: 12px 0;
+<<<<<<< HEAD
+=======
+}
+
+.error-message {
+  color: red;
+>>>>>>> main
 }
