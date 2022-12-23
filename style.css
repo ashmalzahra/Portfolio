@@ -360,7 +360,7 @@ div p {
   font-size: 13px;
 }
 
-.popup-list>* {
+.popup-list > * {
   border: 1px solid #979493;
 }
 
@@ -405,8 +405,6 @@ div p {
   height: 50px;
 }
 
-
-
 /* Work section */
 
 .work {
@@ -417,7 +415,7 @@ div p {
   margin-bottom: 70px;
 }
 
-.work>* {
+.work > * {
   grid-column: 2;
   display: flex;
   flex-direction: column;
@@ -488,7 +486,7 @@ div p {
     border: 2px solid #091e42;
   }
 
-  #one>* {
+  #one > * {
     display: none;
   }
 
@@ -704,7 +702,7 @@ div p {
   padding-left: 0;
 }
 
-.languages>* {
+.languages > * {
   font-style: normal;
   font-weight: 500;
   background: rgba(202, 194, 194, 0.24);
@@ -999,11 +997,4 @@ input:invalid:required {
   justify-content: center;
   gap: 24px;
   padding: 12px 0;
-<<<<<<< HEAD
-=======
-}
-
-.error-message {
-  color: red;
->>>>>>> main
 }
