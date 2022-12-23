@@ -314,6 +314,7 @@ div p {
   margin-top: 1%;
   margin-right: 5%;
   margin-left: 5%;
+  overflow: auto;
 
   /* margin-bottom: 1%;  */
 
