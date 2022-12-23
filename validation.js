@@ -13,7 +13,7 @@ function validate(a) {
 
 form.addEventListener('submit', (e) => {
   if (validate(email.value)) {
-    form.insertBefore(message, form.children[5]);
+    form.insertBefore(message, form.children[6]);
     e.preventDefault();
   }
 });

@@ -999,3 +999,7 @@ input:invalid:required {
   gap: 24px;
   padding: 12px 0;
 }
+
+.error-message {
+  color: red;
+}
