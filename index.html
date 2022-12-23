@@ -10,6 +10,7 @@
     <script src="main.js" defer></script>
     <script src="popup.js" defer></script>
     <script src="validation.js" defer></script>
+    <script src="localstorage.js" defer></script>
 
 </head>
 
@@ -424,7 +425,8 @@
             <input type="text" name="user_name" placeholder="Full Name" required max="30" id="Name">
             <label for="Email" style="display: none;"></label>
             <input type="email" name="user_mail" placeholder="Email Address" required id="Email">
-            <textarea name="message" cols="30" rows="5" placeholder="Enter text here" required
+            <label for="Description" style="display: none;"></label>
+            <textarea name="Description" cols="30" rows="5" placeholder="Enter text here" required id="Description"
                 maxlength="500"></textarea>
             <button class="touch" type="submit">Get in touch</button>
         </form>
