@@ -14,3 +14,19 @@ const loadInputValuesStored = () => {
 };
 
 loadInputValuesStored();
+
+const saveOnLocalStorage = () => {
+  localStorage.setItem('contactForm', JSON.stringify(formValues));
+};
+Name.addEventListener('input', () => {
+  formValues.name = Name.value;
+  saveOnLocalStorage();
+});
+Email.addEventListener('input', () => {
+  formValues.email = Email.value;
+  saveOnLocalStorage();
+});
+Description.addEventListener('input', () => {
+  formValues.description = Description.value;
+  saveOnLocalStorage();
+});
