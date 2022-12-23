@@ -8,9 +8,9 @@ const projects = [
     title: 'Multi-Post Stories',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been theindustry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    links : {
-      liveVersion: 'https://ashmalzahra.github.io/Portfolio/' ,
-      sourceCode: 'https://github.com/ashmalzahra/Portfolio' ,
+    links: {
+      liveVersion: 'https://ashmalzahra.github.io/Portfolio/',
+      sourceCode: 'https://github.com/ashmalzahra/Portfolio',
     },
     index: 0,
   },
@@ -19,9 +19,9 @@ const projects = [
     title: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
-    links : {
-      liveVersion: 'https://ashmalzahra.github.io/Portfolio/' ,
-      sourceCode: 'https://github.com/ashmalzahra/Portfolio' ,
+    links: {
+      liveVersion: 'https://ashmalzahra.github.io/Portfolio/',
+      sourceCode: 'https://github.com/ashmalzahra/Portfolio',
     },
     index: 0,
     class: 'project',
@@ -32,9 +32,9 @@ const projects = [
     title2: 'Data Dashboard <br> Healthcare',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
-    links : {
-      liveVersion: 'https://ashmalzahra.github.io/Portfolio/' ,
-      sourceCode: 'https://github.com/ashmalzahra/Portfolio' ,
+    links: {
+      liveVersion: 'https://ashmalzahra.github.io/Portfolio/',
+      sourceCode: 'https://github.com/ashmalzahra/Portfolio',
     },
     index: 0,
     class: 'project',
@@ -45,9 +45,9 @@ const projects = [
     title2: 'Website Protfolio',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
-    links : {
-      liveVersion: 'https://ashmalzahra.github.io/Portfolio/' ,
-      sourceCode: 'https://github.com/ashmalzahra/Portfolio' ,
+    links: {
+      liveVersion: 'https://ashmalzahra.github.io/Portfolio/',
+      sourceCode: 'https://github.com/ashmalzahra/Portfolio',
     },
     index: 0,
     class: 'project',
@@ -57,9 +57,9 @@ const projects = [
     title: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
-    links : {
-      liveVersion: 'https://ashmalzahra.github.io/Portfolio/' ,
-      sourceCode: 'https://github.com/ashmalzahra/Portfolio' ,
+    links: {
+      liveVersion: 'https://ashmalzahra.github.io/Portfolio/',
+      sourceCode: 'https://github.com/ashmalzahra/Portfolio',
     },
     index: 0,
     class: 'project',
@@ -70,9 +70,9 @@ const projects = [
     title2: 'Data Dashboard <br> Healthcare',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
-    links : {
-      liveVersion: 'https://ashmalzahra.github.io/Portfolio/' ,
-      sourceCode: 'https://github.com/ashmalzahra/Portfolio' ,
+    links: {
+      liveVersion: 'https://ashmalzahra.github.io/Portfolio/',
+      sourceCode: 'https://github.com/ashmalzahra/Portfolio',
     },
     index: 0,
     class: 'project',
@@ -83,9 +83,9 @@ const projects = [
     title2: 'Website Protfolio',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
-    links : {
-      liveVersion: 'https://ashmalzahra.github.io/Portfolio/' ,
-      sourceCode: 'https://github.com/ashmalzahra/Portfolio' ,
+    links: {
+      liveVersion: 'https://ashmalzahra.github.io/Portfolio/',
+      sourceCode: 'https://github.com/ashmalzahra/Portfolio',
     },
     index: 0,
     class: 'project',
@@ -152,18 +152,17 @@ articlesContainer.innerHTML = text;
 
 document.body.insertBefore(articlesContainer, document.body.children[2]);
 
-
 const closebutton = document.querySelector('.popup #close');
 
 const projectWindow = document.querySelector('.popup');
 
-const Title = document.getElementById('popupH2')
-const Tech = document.querySelector('.popup-list')
-const imgM = document.getElementById('imgM')
-const imgD = document.getElementById('imgD')
-const Description = document.querySelector('.popup-description')
-const Live = document.getElementById('Live')
-const Source = document.getElementById('Source')
+const Title = document.getElementById('popupH2');
+const Tech = document.querySelector('.popup-list');
+const imgM = document.getElementById('imgM');
+const imgD = document.getElementById('imgD');
+const Description = document.querySelector('.popup-description');
+const Live = document.getElementById('Live');
+const Source = document.getElementById('Source');
 
 const createPopup = (projects) => {
   Title.textContent = projects.title;
@@ -175,7 +174,7 @@ const createPopup = (projects) => {
   Source.forEach((link) => {
     link.href = projects.links.sourceCode;
   });
-}
+};
 
 function showMenu() {
   projectWindow.style.display = 'flex';

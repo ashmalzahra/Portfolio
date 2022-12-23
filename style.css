@@ -238,23 +238,29 @@ div p {
   #imgD {
     display: none;
   }
-  #imgM{
+
+  #imgM {
     justify-content: center;
   }
+
   .text_button {
     display: flex;
     flex-direction: column;
   }
-  .popup-buttons{
+
+  .popup-buttons {
     margin-top: 5%;
   }
-  #pop{
+
+  #pop {
     justify-content: center;
   }
-  .img_description{
+
+  .img_description {
     justify-content: center;
   }
-  .desktop-version{
+
+  .desktop-version {
     display: none;
   }
 }
@@ -268,130 +274,136 @@ div p {
     min-width: 50%;
     height: 75%;
   }
+
   .img_description {
     width: 100%;
     margin-left: 24px;
   }
+
   .text_button {
-        padding-left: 80px;
+    padding-left: 80px;
   }
-  
+
   #popup-description {
-      padding-left: 0;
-      margin-top: 0;
-      width: 370px;
+    padding-left: 0;
+    margin-top: 0;
+    width: 370px;
   }
-   .popup-buttons{
+
+  .popup-buttons {
     margin-top: 28px;
-} 
-  
+  }
 
   #popup-title {
     width: 100%;
     padding-right: 38px;
   }
-  .mobile-version{
+
+  .mobile-version {
     display: none;
   }
-}  
+}
 
-  .popup {
-    background: white;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    border: 1px solid #1c1c1c;
-     margin-top: 1%;
-    margin-right: 5%;
-    margin-left: 5%;
-   /* margin-bottom: 1%;  */
-    /* min-height: 97%; */
-    max-height: 100%; 
-    width: 90%;
-  }
+.popup {
+  background: white;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #1c1c1c;
+  margin-top: 1%;
+  margin-right: 5%;
+  margin-left: 5%;
 
-  .popup-title {
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700px;
-    font-size: 23px;
-    width: 330px;
-    margin-top: 16px;
-    margin-left: 24px;
-  }
+  /* margin-bottom: 1%;  */
 
-  #popupH2M {
-    color: #172B4D;
-    margin-top: 10px;
-  }
+  /* min-height: 97%; */
+  max-height: 100%;
+  width: 90%;
+}
 
-  #popupH2D {
-    color: #172B4D;
-    margin-top: 10px;
-  }
+.popup-title {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 23px;
+  width: 330px;
+  margin-top: 16px;
+  margin-left: 24px;
+}
 
-  .popup-list {
-    display: flex;
-    list-style: none;
-    padding-left: 24px;
-    margin-top: 40px;
-  }
+#popupH2M {
+  color: #172b4d;
+  margin-top: 10px;
+}
 
-  .popup-list li {
-    margin-right: 12px;
-    padding: 10px 12px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-  }
+#popupH2D {
+  color: #172b4d;
+  margin-top: 10px;
+}
 
-  .popup-list > * {
-    border: 1px solid #979493;
-  }
+.popup-list {
+  display: flex;
+  list-style: none;
+  padding-left: 24px;
+  margin-top: 40px;
+}
 
-  .img_description {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.popup-list li {
+  margin-right: 12px;
+  padding: 10px 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+}
 
-  .popup-description {
-    width: 311px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #344563;
-  }
+.popup-list>* {
+  border: 1px solid #979493;
+}
 
-  .popup-buttons {
-    display: flex;
-    margin-bottom: 2.5%;
-  }
-  #close {
-    margin-right: 22px;
-  }
+.img_description {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .popup-button {
-    background: #FF6B00;
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 17px;
-line-height: 24px;
-color: white;
-border: none;
-padding: 12px 12px;
-width: 153px;
-  }
-  
-  #source {
-    margin-left: 5%;
-    height: 50px;
-  }
+.popup-description {
+  width: 311px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #344563;
+}
+
+.popup-buttons {
+  display: flex;
+  margin-bottom: 2.5%;
+}
+
+#close {
+  margin-right: 22px;
+}
+
+.popup-button {
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: white;
+  border: none;
+  padding: 12px 12px;
+  width: 153px;
+}
+
+#source {
+  margin-left: 5%;
+  height: 50px;
+}
 
 
 
@@ -405,7 +417,7 @@ width: 153px;
   margin-bottom: 70px;
 }
 
-.work > * {
+.work>* {
   grid-column: 2;
   display: flex;
   flex-direction: column;
@@ -476,7 +488,7 @@ width: 153px;
     border: 2px solid #091e42;
   }
 
-  #one > * {
+  #one>* {
     display: none;
   }
 
@@ -692,7 +704,7 @@ width: 153px;
   padding-left: 0;
 }
 
-.languages > * {
+.languages>* {
   font-style: normal;
   font-weight: 500;
   background: rgba(202, 194, 194, 0.24);
