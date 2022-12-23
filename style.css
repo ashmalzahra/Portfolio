@@ -237,13 +237,22 @@ div p {
 @media (max-width: 767px) {
   #imgD {
     display: none;
+  }
+  #imgM{
     justify-content: center;
   }
-
   .text_button {
     display: flex;
     flex-direction: column;
-        padding-left: 20px;
+  }
+  .popup-buttons{
+    margin-top: 5%;
+  }
+  #pop{
+    justify-content: center;
+  }
+  .img_description{
+    justify-content: center;
   }
 }
 
@@ -253,25 +262,26 @@ div p {
   }
 
   #imgD {
-    width: 59%;
-    height: 50%;
+    min-width: 50%;
+    height: 75%;
   }
   .img_description {
-    display: flex;
-    flex-direction: row;
     width: 100%;
     margin-left: 24px;
-    margin-top: 10px;
   }
   .text_button {
-    display: flex;
-    flex-direction: column;
-        padding-left: 20px;
+        padding-left: 80px;
   }
   
   #popup-description {
-      padding: 0;
+      padding-left: 0;
+      margin-top: 0;
+      width: 370px;
   }
+   .popup-buttons{
+    margin-top: 28px;
+} 
+  
 
   #popup-title {
     width: 100%;
@@ -284,13 +294,15 @@ div p {
     flex-direction: column;
     position: fixed;
     top: 0;
+    bottom: 0;
     border: 1px solid #1c1c1c;
-    margin-top: 1%;
+     margin-top: 1%;
     margin-right: 5%;
     margin-left: 5%;
-    margin-bottom: 1%;
-    min-height: 96%;
-    max-height: 10%;
+   /* margin-bottom: 1%;  */
+    /* min-height: 97%; */
+    max-height: 100%; 
+    width: 90%;
   }
 
   .popup-title {
@@ -346,13 +358,10 @@ div p {
 
   .popup-buttons {
     display: flex;
-    margin-top: 5%;
-    justify-content: center;
     margin-bottom: 2.5%;
   }
   #close {
-    margin-right: 14px;
-    margin-top: 2px;
+    margin-right: 22px;
   }
 
   .popup-button {
