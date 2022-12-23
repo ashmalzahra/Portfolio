@@ -156,25 +156,25 @@ const closebutton = document.querySelector('.popup #close');
 
 const projectWindow = document.querySelector('.popup');
 
-// const Title = document.getElementById('popupH2');
-// const Tech = document.querySelector('.popup-list');
-// const imgM = document.getElementById('imgM');
-// const imgD = document.getElementById('imgD');
-// const Description = document.querySelector('.popup-description');
-// const Live = document.getElementById('Live');
-// const Source = document.getElementById('Source');
+const Title = document.getElementById('popupH2');
+const Tech = document.querySelector('.popup-list');
+const imgM = document.getElementById('imgM');
+const imgD = document.getElementById('imgD');
+const Description = document.querySelector('.popup-description');
+const Live = document.getElementById('Live');
+const Source = document.getElementById('Source');
 
-// const createPopup = (projects) => {
-//   Title.textContent = projects.title;
-//   Description.textContent = projects.description;
-//   Tech.innerHTML = projects.technologies.map((technology) => `<li>${technology}</li>`).join('');
-//   Live.forEach((link) => {
-//     link.href = projects.links.liveVersion;
-//   });
-//   Source.forEach((link) => {
-//     link.href = projects.links.sourceCode;
-//   });
-// };
+const createPopup = (projects) => {
+  Title.textContent = projects.title;
+  Description.textContent = projects.description;
+  Tech.innerHTML = projects.technologies.map((technology) => `<li>${technology}</li>`).join('');
+  Live.forEach((link) => {
+    link.href = projects.links.liveVersion;
+  });
+  Source.forEach((link) => {
+    link.href = projects.links.sourceCode;
+  });
+};
 
 function showMenu() {
   projectWindow.style.display = 'flex';
