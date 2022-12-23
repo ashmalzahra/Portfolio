@@ -254,6 +254,9 @@ div p {
   .img_description{
     justify-content: center;
   }
+  .desktop-version{
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -287,6 +290,9 @@ div p {
     width: 100%;
     padding-right: 38px;
   }
+  .mobile-version{
+    display: none;
+  }
 }  
 
   .popup {
@@ -317,7 +323,12 @@ div p {
     margin-left: 24px;
   }
 
-  #popupH2 {
+  #popupH2M {
+    color: #172B4D;
+    margin-top: 10px;
+  }
+
+  #popupH2D {
     color: #172B4D;
     margin-top: 10px;
   }
