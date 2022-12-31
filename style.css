@@ -411,7 +411,7 @@ div p {
 .work {
   display: grid;
   background-color: #fff;
-  grid-template-columns: 24px auto 24px;
+  vertical-align: -webkit-baseline-middle;
   row-gap: 24px;
   margin-bottom: 70px;
 }
@@ -424,7 +424,7 @@ div p {
 
 @media (min-width: 768px) {
   .work {
-    grid-template-columns: auto 29% 29% 29% auto;
+    vertical-align: -webkit-baseline-middle;
     padding-bottom: 120px;
     row-gap: 1.6%;
     column-gap: 1.6%;
