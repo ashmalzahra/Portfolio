@@ -452,14 +452,10 @@ div p {
     margin: auto 0;
   }
 
-  .desktop-project {
+  .main-project {
     grid-area: main;
     width: 55%;
     margin-top: 8%;
-  }
-
-  .main-project {
-    display: none;
   }
 
   .text {
@@ -575,14 +571,10 @@ div p {
 }
 
 @media (max-width: 767px) {
-  .main-project img {
-    width: 327px;
-    height: 237px;
-    top: 307px;
-  }
 
-  .desktop-project {
-    display: none;
+  .main-project {
+    width: 325px;
+    height: 180px;
   }
 }
 
@@ -597,7 +589,6 @@ div p {
 }
 
 .text p {
-  height: 125px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-size: 16px;

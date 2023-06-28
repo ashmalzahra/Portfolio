@@ -2,21 +2,20 @@ const projects = [
   {
     title1: 'My Recent Works',
     class1: 'heading',
-    img1: 'images/ImgPlaceholder1.png',
-    img2: './images/larger Placeholder.png',
+    img1: 'images/airbnb.png',
     class: 'text',
-    title: 'Multi-Post Stories',
+    title: 'Book an Airbnb',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been theindustry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
     links: {
-      liveVersion: 'https://ashmalzahra.github.io/Portfolio/',
-      sourceCode: 'https://github.com/ashmalzahra/Portfolio',
+      liveVersion: 'https://airbnb-lkc6.onrender.com/',
+      sourceCode: 'https://github.com/ashmalzahra/book-an-appointment-api',
     },
     index: 0,
   },
   {
     id: 'one',
-    title: 'Profesional Art Printing Data',
+    title: 'Recipes App',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
     links: {
@@ -105,7 +104,6 @@ projects.forEach((element) => {
     <hr id="line">
 
     <img class="main-project" src="${projects[0].img1}" alt="GymFit">
-    <img class="desktop-project" src="${projects[0].img2}" alt="GymFit">
 
     <article class="${projects[0].class}">
     <h2>${projects[0].title}</h2>
