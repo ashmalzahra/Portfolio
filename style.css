@@ -997,3 +997,32 @@ input:invalid:required {
 .error-message {
   color: red;
 }
+
+.main.style3.primary {
+  background: #ffffff;
+}
+
+.main.style3 {
+  text-align: center;
+  padding: 6em 0 6em 0;
+}
+
+.main {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  position: relative;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.main > .content {
+  width: 45em;
+  max-width: calc(100% - 4em);
+  margin: 0 auto;
+}
+
+.main.style3 .content > header {
+  margin-bottom: 2em;
+}
