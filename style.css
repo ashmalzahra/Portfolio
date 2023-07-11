@@ -483,8 +483,8 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     border: 2px solid #091e42;
-  }  
-   
+  }
+
 
   #one > * {
     display: none;
@@ -574,7 +574,6 @@ h2 {
 }
 
 @media (max-width: 767px) {
-
   .main-project {
     width: 325px;
     height: 180px;
@@ -1004,7 +1003,7 @@ input:invalid:required {
   display: inline-block;
 }
 
-.image:before {
+.image::before {
   content: '';
   position: absolute;
   left: 0;
@@ -1083,6 +1082,7 @@ input:invalid:required {
   width: 50%;
   position: relative;
   opacity: 1;
+
   /* border: solid 1px #eaeaea;
 			border-radius: 4px; */
   padding: 7px;
@@ -1463,6 +1463,7 @@ input:invalid:required {
     width: 100%;
   }
 }
+
 /* Main */
 
 .main {
@@ -1589,7 +1590,7 @@ input:invalid:required {
 }
 
 .main.style3.primary {
-  background: #ffffff;
+  background: #fff;
 }
 
 .main.style3.secondary {
@@ -1597,7 +1598,7 @@ input:invalid:required {
 }
 
 .main.dark {
-  color: #ffffff;
+  color: #fff;
 }
 
 .main.dark a {
@@ -1605,7 +1606,7 @@ input:invalid:required {
 }
 
 .main.dark .button.style2 {
-  border-color: #ffffff;
+  border-color: #fff;
 }
 
 .main.dark .button.style2:hover {
@@ -1663,8 +1664,8 @@ body.is-touch .main {
     padding: 6em 15px 6em 15px;
   }
 
-  .main.style2:before,
-  .main.style2:after {
+  .main.style2::before,
+  .main.style2::after {
     display: none !important;
   }
 
