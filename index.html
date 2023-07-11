@@ -22,10 +22,10 @@
                 <button type="button" class="menu">
                     <img src="images/Union.png" alt="Menu">
                 </button>
-                <a class="desktop-link" href="#">Portfolio</a>
-                <a class="desktop-link" href="#">About</a>
-                <a class="desktop-link" href="#">Contact</a>
-                <a class="desktop-link mail" href="#">
+                <a class="desktop-link" href="#work">Portfolio</a>
+                <a class="desktop-link" href="#about">About</a>
+                <a class="desktop-link" href="#contact">Contact</a>
+                <a class="desktop-link mail" href="mailto:ashmal.zahraa@gmail.com">
                     <img src="images/mail.png" alt="email">
                 </a>
             </div>
@@ -35,7 +35,7 @@
                 <img src="images/close.png" alt="Close">
             </button>
             <ul class="mobile-menu">
-                <li class="mobile-menu-item1"><a href="#portfolio">Portfolio</a></li>
+                <li class="mobile-menu-item1"><a href="#work">Portfolio</a></li>
 
                 <li class="mobile-menu-item2"><a href="#about">About</a></li>
 
@@ -49,91 +49,134 @@
         <h1>Hey There. <br> I'm Ashmal</h1>
         <h2>I am a Software Developer</h2>
         <div>
-            <p>I can help build you a product, feature or website. Look through some of my work and experience! If
+            <p class="info">I can help build you a product, feature or website. Look through some of my work and experience! If
                 you like what you see and have a project you need coded, don't hesitate to contact me.</p>
         </div>
         <ul class="socials">
             <li>
-                <a href="#">
+                <a href="https://github.com/ashmalzahra" target="_blank" rel="noopener">
                     <img src="images/github.png" alt="Github">
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/ashmal-zahra/" target="_blank" rel="noopener">
                     <img src="images/link.png" alt="Linkendin">
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <img src="images/m.png" alt="Medium">
-                </a>
-            </li>
-            <li>
-                <a href="#">
+                <a href="https://twitter.com/AshmalZahraa" target="_blank" rel="noopener">
                     <img src="images/twitter.png" alt="Twitter">
                 </a>
             </li>
         </ul>
     </section>
-    <section class="popup" style="display: none;">
-        <div class="popup-title" id="popup-title">
-            <h2 id="popupH2M" class="mobile-version">Multi Post Stories</h2>
-            <h2 id="popupH2D" class="desktop-version">Keeping track of hundreds of components website</h2>
-            <i id="close">
-                <img src="images/close.png" alt="Close">
-            </i>
-        </div>
-        <ul class="popup-list">
-            <li>html</li>
-            <li>Bootstrap</li>
-            <li>Ruby on rails</li>
-        </ul>
-        <div class="img_description">
-            <img id="imgM" src="images/Snapshoot Portfolio.png" alt="Portfolio Image">
-            <img id="imgD" src="./images/Snapshoot Portfolio Desktop.png" alt="">
-            <div class="text_button">
-                <p class="popup-description" id="popup-description">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essent
-                </p>
-                <div class="popup-buttons" id="pop">
-                    <a href="https://ashmalzahra.github.io/Portfolio/" id="Live" target="_blank">
-                        <button type="button" class="popup-button">
-                            See Live
-                            <img src="images/Icon.png" alt="Icon">
-                        </button>
-                    </a>
-                    <a href="https://github.com/ashmalzahra/Portfolio" id="Source" target="_blank">
-                        <button type="button" id="source" class="popup-button">
-                            See Source
-                            <img src="images/GitVector.png" alt="Github">
 
-                        </button>
-                    </a>
+    <section id="work" class="main style3 primary">
+        <div class="content">
+            <h3 class="heading">My Recent Works</h3>
+  
+          <!-- Gallery  -->
+          <div class="gallery1">
+            <article class="from-left">
+              <div class="border">
+                <div class="image fit">
+                  <img src="images/airbnb.png" title="Book an airbnb" alt="Project 1">
                 </div>
-            </div>
+                <div class="caption">
+                  <h3>Book an Airbnb</h3>
+                  <p>
+                    This app functions similarly to an Airbnb booking app.
+                    The server-side component is responsible for handling requests and managing the 
+                    database.
+                    The React client will interact with this backend to perform various actions, 
+                    including creating new places and reservations, viewing place details, and 
+                    removing places from the system.
+                  </p>
+                </div>
+                <a href="https://reserve-places.onrender.com/" target="_blank" rel="noopener" class="button-small">See Live
+                </a>
+                <a href="https://github.com/ashmalzahra/book-an-appointment-api" target="_blank" rel="noopener" class="button-small">See Github</a>
+              </div>
+            </article>
+            <article class="from-left">
+              <div class="border">
+                <div class="image fit">
+                  <img src="images/spacetravel.png" title="Space Travelers' Hub" alt="">
+                </div>
+  
+                <div class="caption">
+                  <h3>Space Travelers' Hub</h3>
+                  <p>
+                    This SPA(Single Page Application) is created using real live data from the SpaceX API.
+                    A web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+                    The Space Travelers' Hub consists of Rockets, Missions, and the My Profile section.
+                  </p>
+                  <a href="https://space-travelers-hub-ruuk.onrender.com/" target="_blank" rel="noopener" class="button-small">See Live</a>
+                  <a href="https://github.com/ashmalzahra/space-travelers-hub" target="_blank" rel="noopener" class="button-small">See Github</a>
+                </div>
+              </div>
+            </article>
+            <article class="from-right">
+              <div class="border">
+                <div class="image fit">
+                  <img src="images/to-do.png" title="To-Do list" alt="">
+                </div>
+  
+                <div class="caption">
+                  <h3>To-Do List</h3>
+                  <p>
+                    A react "To-Do list" tool that helps to organize your day. It simply lists the 
+                    things that you need to do and allows you to mark them as complete. Built with 
+                    React.
+                  </p>
+                  <a href="https://react-to-do-list.onrender.com/" target="_blank" rel="noopener" class="button-small">See Live</a>
+                  <a href="https://github.com/ashmalzahra/react-to-do-list" target="_blank" rel="noopener" class="button-small">See Github</a>
+                </div>
+              </div>
+            </article>
+            <article class="from-right">
+              <div class="border">
+                <div class="image fit">
+                  <img src="images/awesome.png" title="Awesome Books" alt="">
+                </div>
+  
+                <div class="caption">
+                  <h3>Awesome Books</h3>
+                  <p>
+                    "Awesome books" is a simple website that displays a list of books and allows you to 
+                    add and remove books from that list. A medium-fidelity wireframe has
+                    been used to build the UI. Built with HTML, CSS, JavaScript ES6.
+                  </p>
+  
+                  <a href="https://ashmalzahra.github.io/Awesome-books-with-ES6/#books" target="_blank" rel="noopener" class="button-small">See Live</a>
+                  <a href="https://github.com/ashmalzahra/Awesome-books-with-ES6" target="_blank" rel="noopener" class="button-small">See Github</a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
     </section>
+
     <section class="about-me" id="about">
         <h2>About Me</h2>
         <p>Hello I'm a software developer! I can help you build a product, feature or website. Look through some of
             my work and experience. If you like what you see and have a project you need coded, don't hesitate to
             contact me.</p>
+        <a href="https://docs.google.com/document/d/1cjBZtey6cEp6UfzWRplLwDULpsUJ8BYRUYdU-dO0uKA/edit?usp=sharing" target="_blank" rel="noopener">
         <button class="resume" type="button">Get my resume</button>
+        </a>
         <div class="lists">
             <hr id="second-line">
             <ul class="lang">
                 <li class="bold">
                     <img src="images/Rectangle 55.png" alt="rhombus tag">
-                    Language
+                    Languages
                 </li>
                 <ul class="simple">
                     <li>Javascript</li>
                     <li>Ruby</li>
-                    <li>Html</li>
-                    <li>Css</li>
+                    <li>CSS3</li>
+                    <li>HTML5</li>
                 </ul>
             </ul>
             <ul class="frameworks">
@@ -143,11 +186,13 @@
                 </li>
 
                 <ul class="simple">
-                    <li>Bootstrap</li>
-                    <li>Ruby on Rails</li>
+                    <li>React</li>
+                    <li>Rails</li>
+                    <li>Jest</li>
                     <li>RSPec</li>
                     <li>CapyBara</li>
-                    <li>Selenium</li>
+                    <li>Bootstrap</li>
+                    <li>Tailwind CSS</li>
                 </ul>
 
             </ul>
@@ -157,8 +202,6 @@
                     Skills
                 </li>
                 <ul class="simple">
-                    <li>Codekit</li>
-                    <li>Githubt</li>
                     <li>Codepen</li>
                     <li>Gitlab</li>
                     <li>Terminal</li>
@@ -167,14 +210,15 @@
             </ul>
         </div>
     </section>
+
     <section class="form" id="contact">
         <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-        <form action="https://formspree.io/f/{form_id}" method="post">
-            <label for="Name" style="display: none;"></label>
+        <form action="https://formspree.io/f/xbjerara" method="post"> 
+            <label for="Name"></label> 
             <input type="text" name="user_name" placeholder="Full Name" required max="30" id="Name">
-            <label for="Email" style="display: none;"></label>
+            <label for="Email"></label> 
             <input type="email" name="user_mail" placeholder="Email Address" required id="Email">
-            <label for="Description" style="display: none;"></label>
+            <label for="Description"></label>
             <textarea name="Description" cols="30" rows="5" placeholder="Enter text here" required id="Description"
                 maxlength="500"></textarea>
             <button class="touch" type="submit">Get in touch</button>
@@ -184,22 +228,17 @@
         <hr id="third-line">
         <ul class="tags">
             <li>
-                <a href="#">
+                <a href="https://github.com/ashmalzahra" target="_blank" rel="noopener">
                     <img src="images/Vectorgithub.svg" alt="Github">
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/ashmal-zahra/" target="_blank" rel="noopener">
                     <img src="images/Grouplinktn.svg" alt="Linkendin">
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <img src="images/Vectorm.png" alt="Medium">
-                </a>
-            </li>
-            <li>
-                <a href="#">
+                <a href="https://twitter.com/AshmalZahraa" target="_blank" rel="noopener">
                     <img src="images/Vectortwiter.svg" alt="Twitter">
                 </a>
             </li>

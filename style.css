@@ -169,7 +169,7 @@ main {
     padding-left: 150px;
   }
 
-  div p {
+  .info {
     width: 566px;
     font-weight: 400;
     font-size: 20px;
@@ -206,7 +206,7 @@ h2 {
   align-self: flex-start;
 }
 
-div p {
+.info {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -452,14 +452,10 @@ div p {
     margin: auto 0;
   }
 
-  .desktop-project {
+  .main-project {
     grid-area: main;
     width: 55%;
     margin-top: 8%;
-  }
-
-  .main-project {
-    display: none;
   }
 
   .text {
@@ -482,7 +478,10 @@ div p {
 
   #one {
     grid-area: one;
-    background-image: url(images/one.png);
+    background-image: url(images/recipe.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border: 2px solid #091e42;
   }
 
@@ -561,7 +560,6 @@ div p {
     font-weight: 400;
     font-size: 40px;
     height: 50px;
-    margin-top: 120px;
   }
 }
 
@@ -575,14 +573,9 @@ div p {
 }
 
 @media (max-width: 767px) {
-  .main-project img {
-    width: 327px;
-    height: 237px;
-    top: 307px;
-  }
-
-  .desktop-project {
-    display: none;
+  .main-project {
+    width: 325px;
+    height: 180px;
   }
 }
 
@@ -597,7 +590,6 @@ div p {
 }
 
 .text p {
-  height: 125px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -1001,4 +993,453 @@ input:invalid:required {
 
 .error-message {
   color: red;
+}
+
+/* Image */
+
+.image {
+  position: relative;
+  display: inline-block;
+}
+
+.image::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/overlay.png');
+}
+
+.image img {
+  display: block;
+  width: 100%;
+}
+
+.image.featured {
+  display: block;
+  width: 100%;
+  margin: 0 0 2em 0;
+}
+
+.image.fit {
+  display: block;
+  width: 100%;
+}
+
+.image.left {
+  float: left;
+  margin: 0 2em 2em 0;
+}
+
+.image.centered {
+  display: block;
+  margin: 0 0 2em 0;
+}
+
+.image.centered img {
+  margin: 0 auto;
+  width: auto;
+}
+
+/* Gallery */
+
+.gallery1 {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 45em;
+  max-width: 100%;
+  margin: 0 auto 2em auto;
+}
+
+.border {
+  border: solid 1px #eaeaea;
+  padding-bottom: 10px;
+}
+
+.border2 {
+  border: solid 3px #d4d4d4;
+  border-radius: 10px;
+}
+
+.gallery1 article {
+  -moz-transition: -moz-transform 1s ease, opacity 1s ease;
+  -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+  -ms-transition: -ms-transform 1s ease, opacity 1s ease;
+  transition: transform 1s ease, opacity 1s ease;
+  -moz-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  width: 50%;
+  position: relative;
+  opacity: 1;
+
+  /* border: solid 1px #eaeaea;
+			border-radius: 4px; */
+  padding: 7px;
+}
+
+.gallery1 article .image {
+  margin: 0;
+  display: block;
+}
+
+@media screen and (max-width: 480px) {
+  .gallery1 {
+    -moz-flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .gallery1 article {
+    width: 100%;
+  }
+}
+
+/* Main */
+
+.main {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  position: relative;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.main > .content {
+  width: 45em;
+  max-width: calc(100% - 4em);
+  margin: 0 auto;
+}
+
+.main > .content > :last-child {
+  margin-bottom: 0;
+}
+
+.main.fullscreen {
+  min-height: 100%;
+}
+
+.main.style1 {
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3em 0 3em 0;
+}
+
+.main.style1 h2 {
+  font-size: 4.25em;
+  line-height: 1em;
+}
+
+.main.style1 > .content {
+  -moz-transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease;
+  -ms-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  opacity: 1;
+  margin: 0;
+}
+
+.main.style2 > .content {
+  -moz-transition: -moz-transform 1s ease;
+  -webkit-transition: -webkit-transform 1s ease;
+  -ms-transition: -ms-transform 1s ease;
+  transition: transform 1s ease;
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  position: relative;
+  width: 35%;
+  margin: 0;
+}
+
+.main.style1.inactive > .content {
+  opacity: 0;
+}
+
+.main.style2 {
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  padding: 3em 0 3em 0;
+  overflow: hidden;
+}
+
+.main.style2.left {
+  -moz-justify-content: -moz-flex-start;
+  -webkit-justify-content: -webkit-flex-start;
+  -ms-justify-content: -ms-flex-start;
+  justify-content: flex-start;
+}
+
+.main.style2.right {
+  -moz-justify-content: -moz-flex-end;
+  -webkit-justify-content: -webkit-flex-end;
+  -ms-justify-content: -ms-flex-end;
+  justify-content: flex-end;
+}
+
+.main.style2.inactive.left > .content {
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.main.style2.inactive.right > .content {
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.main.style3 {
+  text-align: center;
+  padding: 6em 0 6em 0;
+}
+
+.main.style3 .content > header {
+  margin-bottom: 2em;
+}
+
+.main.style3.primary {
+  background: #fff;
+}
+
+.main.style3.secondary {
+  background: #f5f6f7;
+}
+
+.main.dark {
+  color: #fff;
+}
+
+.main.dark a {
+  color: inherit;
+}
+
+.main.dark .button.style2 {
+  border-color: #fff;
+}
+
+.main.dark .button.style2:hover {
+  background-color: rgba(255, 255, 255, 0.125);
+}
+
+.main.dark .button.style2:active {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.main.dark .button.style2.down {
+  background-image: url('images/dark-arrow.svg');
+}
+
+body.is-touch .main {
+  background-attachment: scroll !important;
+}
+
+@media screen and (max-width: 1920px) {
+  .main.style2 .content {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .main.style2 .content {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main.style2 .content {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .main > .content br {
+    display: none;
+  }
+
+  .main.fullscreen {
+    height: auto !important;
+  }
+
+  .main.style1 {
+    padding: 4em 15px 4em 15px;
+  }
+
+  .main.style1 h2 {
+    font-size: 3em;
+  }
+
+  .main.style2 {
+    padding: 6em 15px 6em 15px;
+  }
+
+  .main.style2::before,
+  .main.style2::after {
+    display: none !important;
+  }
+
+  .main.style2 .button.anchored {
+    display: none;
+  }
+
+  .main.style2 .content {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    -moz-transform: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  .main.style3 {
+    text-align: center;
+    padding: 3em 10px 3em 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main > .content {
+    max-width: calc(100% - 1.5em);
+  }
+}
+
+.button-small {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  background-color: rgb(255, 107, 0);
+  border: 0;
+  border-radius: 3.5em;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  height: 3.5em;
+  line-height: 3.5em;
+  outline: 0;
+  padding: 0 2em 0 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+
+input[type='button'].down,
+input[type='submit'].down,
+input[type='reset'].down,
+.button-small.down {
+  width: 5em;
+  height: 5em;
+  line-height: 4.5em;
+  padding: 0;
+  background-image: url('images/dark-arrow.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-indent: -10em;
+  overflow: hidden;
+}
+
+input[type='button'].down.anchored,
+input[type='submit'].down.anchored,
+input[type='reset'].down.anchored,
+.button-small.down.anchored {
+  bottom: 0;
+  border-bottom: 0;
+  border-radius: 3em 3em 0 0;
+  height: 4.5em;
+  margin-left: -2.5em;
+}
+
+input[type='button'].anchored,
+input[type='submit'].anchored,
+input[type='reset'].anchored,
+.button-small.anchored {
+  position: absolute;
+  left: 50%;
+}
+
+input[type='button']:hover,
+input[type='submit']:hover,
+input[type='reset']:hover,
+.button-small:hover {
+  background-color: #fff;
+  color: #e05304;
+}
+
+input[type='button']:active,
+input[type='submit']:active,
+input[type='reset']:active,
+.button-small:active {
+  background-color: #fff;
+  color: #e05304;
+}
+
+input[type='button'].style2,
+input[type='submit'].style2,
+input[type='reset'].style2,
+.button-small.style2 {
+  background-color: transparent;
+  border: solid 2px #e5e6e7;
+  color: inherit;
+}
+
+input[type='button'].style2:hover,
+input[type='submit'].style2:hover,
+input[type='reset'].style2:hover,
+.button-small.style2:hover {
+  background-color: rgba(229, 230, 231, 0.25);
+}
+
+input[type='button'].style2:active,
+input[type='submit'].style2:active,
+input[type='reset'].style2:active,
+.button-small.style2:active {
+  background-color: rgba(229, 230, 231, 0.375);
+}
+
+input[type='button'].style2.down,
+input[type='submit'].style2.down,
+input[type='reset'].style2.down,
+.button-small.style2.down {
+  background-image: url('images/arrow.svg');
 }
