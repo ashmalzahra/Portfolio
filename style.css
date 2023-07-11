@@ -169,7 +169,7 @@ main {
     padding-left: 150px;
   }
 
-  div p {
+  .info {
     width: 566px;
     font-weight: 400;
     font-size: 20px;
@@ -206,7 +206,7 @@ h2 {
   align-self: flex-start;
 }
 
-div p {
+.info {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1464,96 +1464,6 @@ input:invalid:required {
     width: 100%;
   }
 }
-
-/* Header */
-
-#header {
-  position: fixed;
-  z-index: 10000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.95);
-  height: 3em;
-  line-height: 3em;
-  box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
-}
-
-#header h1 {
-  position: absolute;
-  left: 1em;
-  top: 0;
-  height: 3em;
-  line-height: 3em;
-  cursor: default;
-}
-
-#header h1 a {
-  font-size: 1.25em;
-}
-
-#header nav {
-  position: absolute;
-  right: 0.5em;
-  top: 0;
-  height: 3em;
-  line-height: 3em;
-}
-
-#header nav ul {
-  margin: 0;
-}
-
-#header nav ul li {
-  display: inline-block;
-  margin-left: 0.5em;
-  font-size: 0.9em;
-}
-
-#header nav ul li a {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-  height: 3em;
-  line-height: 3em;
-  padding: 0 0.5em 0 0.5em;
-  outline: 0;
-}
-
-@media screen and (max-width: 736px) {
-  #header {
-    height: 2.5em;
-    line-height: 2.5em;
-  }
-
-  #header h1 {
-    text-align: center;
-    position: relative;
-    left: 0;
-    top: 0;
-    height: 2.5em;
-    line-height: 2.5em;
-  }
-
-  #header h1 a {
-    font-size: 1em;
-  }
-
-  #header nav {
-    display: none;
-  }
-}
-
-body {
-  padding-top: 3em;
-}
-
-@media screen and (max-width: 736px) {
-  body {
-    padding-top: 2.5em;
-  }
-}
-
 /* Main */
 
 .main {
@@ -1785,3 +1695,121 @@ body.is-touch .main {
   }
 }
 
+.button-small > a {
+  -moz-transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  color: #98c593;
+}
+
+.button-small {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  background-color: #98c593;
+  border: 0;
+  border-radius: 3.5em;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  height: 3.5em;
+  line-height: 3.5em;
+  outline: 0;
+  padding: 0 2em 0 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+
+input[type='button'].down,
+input[type='submit'].down,
+input[type='reset'].down,
+.button-small.down,
+.button-small.down {
+  width: 5em;
+  height: 5em;
+  line-height: 4.5em;
+  padding: 0;
+  background-image: url('images/dark-arrow.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-indent: -10em;
+  overflow: hidden;
+}
+
+input[type='button'].down.anchored,
+input[type='submit'].down.anchored,
+input[type='reset'].down.anchored,
+.button-small.down.anchored,
+.button-small.down.anchored {
+  bottom: 0;
+  border-bottom: 0;
+  border-radius: 3em 3em 0 0;
+  height: 4.5em;
+  margin-left: -2.5em;
+}
+
+input[type='button'].anchored,
+input[type='submit'].anchored,
+input[type='reset'].anchored,
+.button-small.anchored,
+.button-small.anchored {
+  position: absolute;
+  left: 50%;
+}
+
+input[type='button']:hover,
+input[type='submit']:hover,
+input[type='reset']:hover,
+.button-small:hover,
+.button-small:hover {
+  background-color: #a8cea4;
+}
+
+input[type='button']:active,
+input[type='submit']:active,
+input[type='reset']:active,
+.button-small:active,
+.button-small:active {
+  background-color: #88bc82;
+}
+
+input[type='button'].style2,
+input[type='submit'].style2,
+input[type='reset'].style2,
+.button-small.style2,
+.button-small.style2 {
+  background-color: transparent;
+  border: solid 2px #e5e6e7;
+  color: inherit;
+}
+
+input[type='button'].style2:hover,
+input[type='submit'].style2:hover,
+input[type='reset'].style2:hover,
+.button-small.style2:hover,
+.button-small.style2:hover {
+  background-color: rgba(229, 230, 231, 0.25);
+}
+
+input[type='button'].style2:active,
+input[type='submit'].style2:active,
+input[type='reset'].style2:active,
+.button-small.style2:active,
+.button-small.style2:active {
+  background-color: rgba(229, 230, 231, 0.375);
+}
+
+input[type='button'].style2.down,
+input[type='submit'].style2.down,
+input[type='reset'].style2.down,
+.button-small.style2.down,
+.button-small.style2.down {
+  background-image: url('images/arrow.svg');
+}
