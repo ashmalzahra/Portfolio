@@ -577,6 +577,12 @@ h2 {
     width: 325px;
     height: 180px;
   }
+  .resume{
+    margin-left: 24px;
+  }
+  .about-me h2{
+    margin-left: 24px;
+  }
 }
 
 .text h2 {
@@ -746,10 +752,6 @@ h2 {
     padding-left: 6%;
   }
 
-  .resume {
-    margin: 20px;
-  }
-
   .about-me div {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -789,7 +791,6 @@ h2 {
   width: 327px;
   height: 79px;
   margin-top: 120px;
-  margin-left: 24px;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -804,9 +805,8 @@ h2 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
-  margin-left: 24px;
   color: #f4f5f7;
 }
 
@@ -814,7 +814,6 @@ h2 {
   width: 161px;
   height: 48px;
   border: none;
-  margin-left: 24px;
   background: #ff6b00;
   color: #ffff;
   font-family: 'Inter', sans-serif;
@@ -839,6 +838,10 @@ h2 {
     margin-bottom: 125px;
     border: 1px solid #fff;
     margin-top: 22px;
+  }
+
+  .about-me p {
+    padding: 0 5% 0 6%;
   }
 }
 
