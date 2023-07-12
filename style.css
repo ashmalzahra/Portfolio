@@ -23,6 +23,8 @@ header {
   width: 100%;
   height: 60px;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1;
 }
 
 header a {
@@ -443,6 +445,7 @@ h2 {
     color: #091e42;
     width: 100%;
     padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   #line {
@@ -560,6 +563,7 @@ h2 {
     font-weight: 400;
     font-size: 40px;
     height: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -1445,4 +1449,13 @@ input[type='submit'].style2.down,
 input[type='reset'].style2.down,
 .button-small.style2.down {
   background-image: url('images/arrow.svg');
+}
+.github{
+  display: block;
+  padding: 0 0 0.5em 0;
+  font-size: 22px;
+}
+
+.git{
+  color: #e05304;;
 }
