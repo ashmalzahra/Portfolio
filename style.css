@@ -1460,15 +1460,4 @@ input[type='reset'].style2.down,
   color: #e05304;;
 }
 
-.container {
-  opacity: 0;
-  transform: translateX(-50%);
-  transition: opacity 1s, transform 1s;
-}
-
-.container.show {
-  opacity: 1;
-  transform: translateX(0);
-}
-
 
