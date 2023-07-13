@@ -1460,4 +1460,10 @@ input[type='reset'].style2.down,
   color: #e05304;;
 }
 
+.aos-disabled [data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+
 
