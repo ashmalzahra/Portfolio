@@ -11,12 +11,12 @@
     <script src="popup.js" defer></script>
     <script src="validation.js" defer></script>
     <script src="localstorage.js" defer></script>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="/index.html">Ashmal Zahra </a>
+        <a href="#main">Ashmal Zahra </a>
         <nav>
             <div class="desktop-menu">
                 <button type="button" class="menu">
@@ -45,14 +45,14 @@
         </div>
     </header>
 
-    <section class="container">
+    <section class="container" id="main">
         <h1>Hey There. <br> I'm Ashmal</h1>
         <h2>I am a Software Developer</h2>
         <div>
             <p class="info">I can help build you a product, feature or website. Look through some of my work and experience! If
                 you like what you see and have a project you need coded, don't hesitate to contact me.</p>
         </div>
-        <ul class="socials">
+        <ul class="socials" data-aos="fade-down" data-aos-duration="2000" data-aos-easing="ease-in-quad">
             <li>
                 <a href="https://github.com/ashmalzahra" target="_blank" rel="noopener">
                     <img src="images/github.png" alt="Github">
@@ -71,12 +71,13 @@
         </ul>
     </section>
 
-    <section id="work" class="main style3 primary">
+    <section id="work" class="main style3 primary" data-aos="fade-up" data-aos-duration="4000" data-aos-easing="ease-in-quad">
         <div class="content">
             <h3 class="heading">My Recent Works</h3>
+            <p class="github">Here are some of my projects. If you want to see more, you can visit my github account. <a href="https://github.com/ashmalzahra" target="_blank" rel="noopener" class="git">My Github</a></p>
   
           <!-- Gallery  -->
-          <div class="gallery1">
+          <div class="gallery1" data-aos="fade-up" data-aos-duration="4000" data-aos-easing="ease-in-quad">
             <article class="from-left">
               <div class="border">
                 <div class="image fit">
@@ -158,14 +159,18 @@
     </section>
 
     <section class="about-me" id="about">
-        <h2>About Me</h2>
-        <p>Hello I'm a software developer! I can help you build a product, feature or website. Look through some of
-            my work and experience. If you like what you see and have a project you need coded, don't hesitate to
-            contact me.</p>
+        <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-in-quad">About Me</h2>
+        <p data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-in-quad">Hi, I'm Ashmal, a certified Full-Stack Web Developer with expertise in JavaScript, Rails, 
+          React, and Redux. During my time at Microverse, an online training Software Development school, I successfully completed numerous projects, 
+          demonstrating my teamwork, problem-solving, and project management skills. I hold a 
+          Full-Stack Web Development certificate and thrive in remote work environments, 
+          collaborating with developers worldwide. My goal is to specialize in an exemplary 
+          and innovative approach to coding while contributing significantly to the development 
+          trends.</p>
         <a href="https://docs.google.com/document/d/1cjBZtey6cEp6UfzWRplLwDULpsUJ8BYRUYdU-dO0uKA/edit?usp=sharing" target="_blank" rel="noopener">
-        <button class="resume" type="button">Get my resume</button>
+        <button data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-in-quad" class="resume" type="button">Get my resume</button>
         </a>
-        <div class="lists">
+        <div class="lists" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-quad">
             <hr id="second-line">
             <ul class="lang">
                 <li class="bold">
@@ -212,8 +217,8 @@
     </section>
 
     <section class="form" id="contact">
-        <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-        <form action="https://formspree.io/f/xbjerara" method="post"> 
+        <h2 data-aos="fade-up-right" data-aos-duration="2000" data-aos-easing="ease-in-quad">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+        <form data-aos="fade-up-right" data-aos-duration="2000" data-aos-easing="ease-in-quad" action="https://formspree.io/f/xbjerara" method="post"> 
             <label for="Name"></label> 
             <input type="text" name="user_name" placeholder="Full Name" required max="30" id="Name">
             <label for="Email"></label> 
@@ -244,6 +249,51 @@
             </li>
         </ul>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      var isMobile = window.innerWidth < 768;
+      var initialized = false;
+    
+      function initializeAOS() {
+        if (initialized) return;
+    
+        AOS.init({
+          duration: 2000,
+          easing: 'ease-in-quad'
+        });
+    
+        initialized = true;
+      }
+    
+      function removeAOSAttributes() {
+        var elements = document.querySelectorAll('[data-aos]');
+    
+        elements.forEach(function(element) {
+          element.removeAttribute('data-aos');
+          element.classList.remove('aos-init', 'aos-animate');
+        });
+      }
+    
+      function handleWindowResize() {
+        var newIsMobile = window.innerWidth < 768;
+    
+        if (newIsMobile !== isMobile) {
+          if (newIsMobile) {
+            removeAOSAttributes();
+          } else {
+            initializeAOS();
+          }
+    
+          isMobile = newIsMobile;
+        }
+      }
+    
+      document.addEventListener("DOMContentLoaded", function(event) {
+        initializeAOS();
+        window.addEventListener("resize", handleWindowResize);
+      });
+    </script>       
+     
 </body>
 
 </html>
